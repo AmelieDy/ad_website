@@ -1,0 +1,21 @@
+.front,
+.back {
+  top:0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* text-align: center; */
+  backface-visibility: hidden;
+}
+
+.back {
+  background: #04BFBF;
+  color: white;
+  transform: rotateY( 180deg );
+}
+
+.service-card:hover .background-service {
+  /* transform: rotateY( 180deg ) ;
+  transition: transform 0.3s; */
+}

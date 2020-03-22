@@ -1,0 +1,314 @@
+#wrapper
+  / Page Content
+  #page-content-wrapper
+    %nav.navbar.navbar-expand-lg.navbar-light
+      .container
+        %a.navbar-brand.hvr-sweep-to-right{:href => "#"} AD
+        %button.navbar-toggler{"aria-controls" => "navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+          %span.navbar-toggler-icon
+        #navbar.collapse.navbar-collapse
+          %ul.navbar-nav.ml-auto
+            /
+              <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+            %li.nav-item
+              %a.nav-link{:href => "#"} Services
+            %li.nav-item
+              %a.nav-link{:href => "#"} à propos
+            %li.nav-item
+              %a.nav-link{:href => "#"} Parcours
+            %li.nav-item
+              %a.nav-link{:href => "#"} Charte qualit&#xE9;
+            %li.nav-item
+              %a.nav-link{:href => "#"} Comp&#xE9;tences
+            %li.nav-item
+              %a.nav-link{:href => "#"} Contact
+    #home.section
+      .background-home
+        -# .rellax{"data-rellax-speed" => "3"}
+        -#   = image_tag "it-services-03.png", class: "network wow pulse"
+        .container
+          .row
+            .col-md-7
+              %h1.name-header.wow.fadeIn Am&#xE9;lie Delory
+              %h1.title-header
+                Création de sites
+                %br
+
+                &
+
+                applications
+                %span Web
+                %br
+                %br
+                Valenciennes
+              %br
+              %span.btn-theme me contacter
+              -# <div class="bottom-links">
+              -# <button class='btn btn-link'>
+              -# <i class= 'fa fa-soundcloud'></i>
+              -# </button>
+              -# <button class='btn btn-link btn-outline'>
+              -# <i class= 'fa fa-github'></i>
+              -# </button>
+              -# <button class='btn btn-link btn-outline'>
+              -# <i class= 'fa fa-linkedin'></i>
+              -# </button>
+              -# <button class='btn btn-link btn-outline'>
+              -# <span class='fa slides'>s</span>
+              -# </button>
+              -#
+              -# </div>
+    #services.section
+      .container
+        #service-cards
+          .row
+            .col-lg-12
+              %h5.title-sm Je propose
+              %h3.title-lg Services
+          .row
+            .col-lg-4
+              .service-card.website-service.wow.bounceInLeft
+                .background-service
+                  = image_tag "network.png", class: "service-icon front-icon"
+                  .service-content
+                    %h5.service-item sites vitrine
+                    %p Soyez visible sur le web grâce à un site vitrine sur mesure, mettant en avant vos produits, services et valeurs.
+            .col-lg-4
+              .service-card.app-service.wow.bounceInDown
+                .background-service
+                  = image_tag "support.png", class: "service-icon front-icon"
+                  .service-content
+                    %h5.service-item applications web
+                    %p Optimisez et automatisez vos tâches du quodidien à travers un développement spécifique à vos besoins.
+            .col-lg-4
+              .service-card.integration-service.wow.bounceInRight
+                .background-service
+                  = image_tag "layers.png", class: "service-icon front-icon"
+                  .service-content
+                    %h5.service-item intégration
+                    %p Traduction de maquettes graphiques en code, assemblant tous les &#xE9;lements de la mise en page du site web de fa&#xE7;on optimale.
+
+    #website
+      .row
+        .col-lg-12.visible-img-container
+          .row
+            .col-lg-5.layer-visible
+
+              = image_tag "minimal.jpg", class: "visible-img"
+              -# .box-website.box-visible
+              -#   %h3.light
+              -#     VISIBLE
+            .col-lg-7
+              .visible-card.dark-blue-bg
+                %h5.title-sm Soyez visible
+                %h3.title-lg.light Un investissement sur le long terme
+
+                %p
+                  Une vitrine disponible en tout temps et accessible de partout, c’est une porte de communication et de présentation pour vous, ce que vous faites et vos valeurs.
+                %p
+                  90% des français effectuent une recherche sur votre entreprise avant d'acheter un service ou un produit, d'où l'importance d'être visible facilement, et avoir de nouveaux clients...
+                %br
+                %strong
+                  %span.btn-theme.text-bold me contacter
+
+      -# .row
+      -#   .col-lg-6
+      -#     .box-website.box-trust
+      -#       %h3 CRÉDIBLE
+      -#
+      -#
+      -#   .col-lg-6.website-content
+      -#
+      -#
+      -#     .trust-card
+      -#       %h5.title-sm Confiance et crédibilité
+      -#       %h3.title-lg Une e-réputation au top
+      -#
+      -#       %p
+      -#         D’après Forrester, 90 % des consommateurs font confiance aux recommandations des autres internautes.
+      -#         Vous pouvez vous reposer sur Google Maps, Pages Jaunes ou d’autres sites d’avis pour recueillir des avis de vos clients. Mais il est préférable de les recueillir chez “vous”.
+      -#         En effet, comme vos prospects vous cherchent sur Internet, mettre des témoignages de vos clients sur votre site est un excellent moyen de les convaincre de votre expertise et de votre professionnalisme.
+      -#
+
+    -# #about.section
+    -#   .layer
+    -#     .container
+    -#       .row
+    -#         .col-lg-12.about-content
+    -#           .card-about
+    -#             .row
+    -#               .col-lg-5
+    -#                 .about-img-container-back
+    -#                   %img.about-img{:alt => "", :src => "assets/images/about-back.jpg"}
+    -#                   .about-img-container-front.rellax{"data-rellax-speed" => "1"}
+    -#                     %img.about-img{:alt => "", :src => "assets/images/about.jpg"}
+    -#               .col-lg-7
+    -#                 .about-content
+    -#                   %h5.title-sm &#xE0; propos
+    -#                   %h3.title-lg.dark.poetry Faites de la place dans un coin de votre esprit et la cr&#xE9;ativit&#xE9; va imm&#xE9;diatement le remplir.
+    -#                   %p
+    -#                     Le Web nous offre aujourd'hui un espace de libert&#xE9; cr&#xE9;atif et d'expression.
+    -#                     C'est avant tout ce qui me passionne dans cet univers o&#xF9; nous sommes au coeur du Language,
+    -#                     mati&#xE8;re premi&#xE8;re qui donne vie &#xE0; nos id&#xE9;es et nos projets, qu'ils soient simples ou compl&#xE8;tement d&#xE9;lirants...
+    -#                     %br
+    -#                       Son &#xE9;volution constante anime mon envie d'apprendre, de cr&#xE9;er, d'am&#xE9;liorer, d'optimiser les techniques de d&#xE9;veloppement et de design, afin de concr&#xE9;tiser ces projets de la fa&#xE7;on la plus adapt&#xE9;e possible.
+    -#                     %span.btn-theme En savoir plus
+    -#                     %button#modalActivate.btn.btn-danger{"data-target" => "#exampleModalPreview", "data-toggle" => "modal", :type => "button"}
+    -#                       Launch demo modal
+    -#                     #exampleModalPreview.modal.fade.right{"aria-hidden" => "true", "aria-labelledby" => "exampleModalPreviewLabel", :role => "dialog", :tabindex => "-1"}
+    -#                       .modal-dialog.momodel.modal-fluid{:role => "document"}
+    -#                         .modal-content
+    -#                           .modal-header.text-center
+    -#                             %h5#exampleModalPreviewLabel.modal-title.w-100 Material Design  Full Screen Modal
+    -#                             %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+    -#                               %span{"aria-hidden" => "true", :style => "font-size: 1.3em;"}
+    -#                           .modal-body
+    -#                             %h1.section-heading.text-center.wow.fadeIn.my-5.pt-3 Not for money, but for humanity
+    #quality
+
+      .container
+        .row
+          .col-lg-12.text-center
+
+            %h5.title-sm plus
+            %h3.title-lg Ma charte qualité
+            / <h1 class="title-lg rellax" data-rellax-speed="1">Charte qualité</h1>
+
+        .row
+          .col-lg-12.quality-background
+            .row
+
+              .col-lg-4
+                .quality-box
+                  = image_tag "detail.png", class: 'quality-icon'
+                  %h5.title
+                    Sens du détail
+
+                  %p.text
+                    Chaque détail compte : le choix des couleurs, le style des ic&#xF4;nes et des boutons, la typographie ainsi que les illustrations.
+              .col-lg-4
+                .quality-box
+                  = image_tag "uniq.png", class: 'quality-icon'
+                  %h5.title
+                    Design unique
+
+
+                  %p.text
+                    Création d'un univers graphique unique permettant de refléter au mieux votre identité et vos valeurs.
+
+
+              .col-lg-4
+                .quality-box
+                  = image_tag "layers.png", class: 'quality-icon'
+                  %h5.title
+                    Interfaces intuitives
+
+
+                  %p.text
+                    Expérience utilisateur agréable et fluide à travers des fonctionnalités simples et intelligibles.
+
+            .row
+              .col-lg-4
+                .quality-box
+
+                  = image_tag "responsive.png", class: 'quality-icon'
+                  %h5.title
+                    Responsive design
+
+                  %p.text
+                    Navigation optimales grace &#xE0; son design responsive qui ajuste automatiquement les dimensions de la page au support num&#xE9;rique utilis&#xE9;.
+
+              .col-lg-4
+                .quality-box
+
+                  = image_tag "evolution.png", class: 'quality-icon'
+                  %h5.title
+                    Développement évolutif
+
+
+                  %p.text
+                    L'architecture de d&#xE9;veloppement est donc pens&#xE9; de sorte &#xE0; pouvoir ajouter, modifier ou d&#xE9;sactiver des fonctionnalit&#xE9;s.
+              .col-lg-4
+                .quality-box
+                  = image_tag "maintenance.png", class: 'quality-icon'
+                  %h5.title
+                    Produits maintenables
+
+
+                  %p.text
+
+                    La rigueur dans le respect des normes de codage permet de simplifier la maintenance et les mises &#xE0; jour.
+
+      -# #skills.section
+      -#   .container
+      -#     .skills-section
+      -#       .row
+      -#         .wow.pulse{:class => "col-lg-6 ", "data-wow-offset" => "500"}
+      -#           .about.section-about
+      -#             = image_tag "skills.jpg"
+      -#             .layer-skills
+      -#         .col-lg-6
+      -#           .section-skills
+      -#             %h5.title-sm languages
+      -#             %h3.title-lg.dark Mes Comp&#xE9;tences techniques
+      -#             %p
+      -#               Sp&#xE9;cialisation
+      -#               %span.theme-dark.text-bold Ruby On rails
+      -#               \&#xE0; travers divers projets en entreprise grace &#xE0; son c&#xF4;t&#xE9;
+      -#               Souple, dynamique, productif dot&#xE9; d'outils complets.
+      -#             .section-progress
+      -#               %span HTML  CSS
+      -#               %span.percent 90%
+      -#               .progress
+      -#                 .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", :percent => "90", :role => "progressbar", :style => "width: 90%"}
+      -#             .section-progress
+      -#               %span JS  JQuery  Ajax
+      -#               %span.percent 70%
+      -#               .progress
+      -#                 .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", :percent => "70", :role => "progressbar", :style => "width: 70%"}
+      -#             .section-progress
+      -#               %span Bootstrap
+      -#               %span.percent 80%
+      -#               .progress
+      -#                 .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", :percent => "80", :role => "progressbar", :style => "width: 80%"}
+      -#             .section-progress
+      -#               %span Ruby On Rails
+      -#               %span.percent 70%
+      -#               .progress
+      -#                 .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", :percent => "70", :role => "progressbar", :style => "width: 70%"}
+      -#             .section-progress
+      -#               %span MySql
+      -#               %span.percent 75%
+      -#               .progress
+      -#                 .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", :percent => "75", :role => "progressbar", :style => "width: 75%"}
+      -#             .section-progress
+      -#               %span GIT
+      -#               %span.percent 80%
+      -#               .progress
+      -#                 .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", :percent => "80", :role => "progressbar", :style => "width: 80%"}
+      #contact
+        .row
+          .col-lg-6
+          .col-lg-6.dark-blue-bg.text-white
+            = form_for @message, url: messages_path do |f|
+              .col-md-12
+                .form-group
+                  = f.label :name
+                  = f.text_field  :name, required: true, class: "form-text"
+                .form-group
+                  = f.label :email
+                  = f.text_field :email, required: true, class: "form-text"
+                .form-group
+                  = f.label :body
+                  = f.text_area :body, rows: 8, cols: 40, required: true, class: "form-text", |
+                    placeholder: "Send me a message"
+                -# .form-group.hidden                                                       |
+                -#
+                -#   = f.label :nickname
+                -#   = f.text_field :nickname, :hint => 'Leave this field blank!'
+
+                = f.submit 'Send Message', class: 'btn btn-primary'
+            #flash-message.col-md-6
+              -# = render 'flash'

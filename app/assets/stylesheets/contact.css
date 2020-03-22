@@ -1,0 +1,7 @@
+#contact {
+  position: relative;
+  background: url("minimal.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 160px;
+}

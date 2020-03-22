@@ -1,0 +1,55 @@
+.about-content p {
+  z-index: 10;
+  text-align: justify;
+  line-height: 2em;
+  font-size: 0.9em;
+}
+
+
+#about {
+  position: relative;
+  /* background: url("../images/m1.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: #FFF;
+  padding-top: 150px;
+  /* border-top-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%; */
+}
+
+.about-img-container-back {
+  position: relative;
+  height: 500px;
+  margin-right: 40px;
+  overflow: hidden;
+}
+
+.about-img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.about-img-container-front {
+  position: relative;
+  margin-left: 100px;
+  margin-top: -400px;
+  height: 460px;
+  border: 10px solid white;
+  z-index: 100;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.poetry {
+  font-family: 'Cedarville Cursive';
+  font-size: 26px;
+  text-transform: none !important;
+}
+
+@media screen and (min-width: 992px) {
+  .about-content {
+    padding-left: 40px;
+  }
+}
