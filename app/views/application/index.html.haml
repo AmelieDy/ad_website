@@ -12,83 +12,69 @@
               <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
+            %li.nav-item.active
+              %a.nav-link{:href => "#"}
+                Services
+
+
             %li.nav-item
-              %a.nav-link{:href => "#"} Services
-            %li.nav-item
-              %a.nav-link{:href => "#"} à propos
-            %li.nav-item
-              %a.nav-link{:href => "#"} Parcours
-            %li.nav-item
-              %a.nav-link{:href => "#"} Charte qualit&#xE9;
-            %li.nav-item
-              %a.nav-link{:href => "#"} Comp&#xE9;tences
+              %a.nav-link{:href => "#"} Charte qualité
+
             %li.nav-item
               %a.nav-link{:href => "#"} Contact
-    #home.section
-      .background-home
-        -# .rellax{"data-rellax-speed" => "3"}
-        -#   = image_tag "it-services-03.png", class: "network wow pulse"
-        .container
-          .row
-            .col-md-7
-              %h1.name-header.wow.fadeIn Am&#xE9;lie Delory
-              %h1.title-header
-                Création de sites
-                %br
+    #home
+      -# = image_tag 'it-services-03.png', class: 'home-img'
+      .layer-home
 
-                &
-
-                applications
-                %span Web
-                %br
-                %br
-                Valenciennes
-              %br
-              %span.btn-theme me contacter
-              -# <div class="bottom-links">
-              -# <button class='btn btn-link'>
-              -# <i class= 'fa fa-soundcloud'></i>
-              -# </button>
-              -# <button class='btn btn-link btn-outline'>
-              -# <i class= 'fa fa-github'></i>
-              -# </button>
-              -# <button class='btn btn-link btn-outline'>
-              -# <i class= 'fa fa-linkedin'></i>
-              -# </button>
-              -# <button class='btn btn-link btn-outline'>
-              -# <span class='fa slides'>s</span>
-              -# </button>
-              -#
-              -# </div>
-    #services.section
       .container
-        #service-cards
-          .row
-            .col-lg-12
-              %h5.title-sm Je propose
-              %h3.title-lg Services
-          .row
-            .col-lg-4
-              .service-card.website-service.wow.bounceInLeft
-                .background-service
-                  = image_tag "network.png", class: "service-icon front-icon"
-                  .service-content
-                    %h5.service-item sites vitrine
-                    %p Soyez visible sur le web grâce à un site vitrine sur mesure, mettant en avant vos produits, services et valeurs.
-            .col-lg-4
-              .service-card.app-service.wow.bounceInDown
-                .background-service
-                  = image_tag "support.png", class: "service-icon front-icon"
-                  .service-content
-                    %h5.service-item applications web
-                    %p Optimisez et automatisez vos tâches du quodidien à travers un développement spécifique à vos besoins.
-            .col-lg-4
-              .service-card.integration-service.wow.bounceInRight
-                .background-service
-                  = image_tag "layers.png", class: "service-icon front-icon"
-                  .service-content
-                    %h5.service-item intégration
-                    %p Traduction de maquettes graphiques en code, assemblant tous les &#xE9;lements de la mise en page du site web de fa&#xE7;on optimale.
+        .svg-container
+          %svg{:height => "100%", :style => "fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;", :version => "1.1", :viewbox => "0 0 247 390", :width => "40px", :xmlns => "http://www.w3.org/2000/svg", "xmlns:xlink" => "http://www.w3.org/1999/xlink"}
+            %path#wheel{:d => "M123.359,79.775l0,72.843", :style => "fill:none;stroke:#fff;stroke-width:20px;"}
+            %path#mouse{:d => "M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z", :style => "fill:none;stroke:#fff;stroke-width:20px;"}
+
+
+        .home-content
+
+          %h2.title-header
+            Création de sites
+            %br & applications web
+
+          %br
+          %span.btn-theme me contacter
+
+
+
+    #services
+
+      .container
+        .row
+          .col-lg-12
+            %h5.title-sm Mes services
+            %h3.title-lg Du sur mesure pour vos projets
+
+
+        .row
+          .col-lg-4
+            .service-card.website-service.wow.bounceInLeft
+              .background-service
+                = image_tag "network.png", class: "service-icon front-icon"
+                .service-content
+                  %h5.service-item sites vitrine
+                  %p Soyez visible sur le web grâce à un site vitrine sur mesure, mettant en avant vos produits, services et valeurs.
+          .col-lg-4
+            .service-card.app-service.wow.bounceInDown
+              .background-service
+                = image_tag "support.png", class: "service-icon front-icon"
+                .service-content
+                  %h5.service-item applications web
+                  %p Optimisez et automatisez vos tâches du quodidien à travers un développement spécifique à vos besoins.
+          .col-lg-4
+            .service-card.integration-service.wow.bounceInRight
+              .background-service
+                = image_tag "layers.png", class: "service-icon front-icon"
+                .service-content
+                  %h5.service-item intégration
+                  %p Traduction de maquettes graphiques en code, assemblant tous les &#xE9;lements de la mise en page du site web de fa&#xE7;on optimale.
 
     #website
       .row
@@ -96,12 +82,12 @@
           .row
             .col-lg-5.layer-visible
 
-              = image_tag "minimal.jpg", class: "visible-img"
+              = image_tag "minimal.jpg", class: "visible-img wow fadeInLeft"
               -# .box-website.box-visible
               -#   %h3.light
               -#     VISIBLE
             .col-lg-7
-              .visible-card.dark-blue-bg
+              .visible-card.wow.fadeInDown
                 %h5.title-sm Soyez visible
                 %h3.title-lg.light Un investissement sur le long terme
 
@@ -181,7 +167,7 @@
             .row
 
               .col-lg-4
-                .quality-box
+                .quality-box.wow.fadeInDown
                   = image_tag "detail.png", class: 'quality-icon'
                   %h5.title
                     Sens du détail
@@ -189,7 +175,7 @@
                   %p.text
                     Chaque détail compte : le choix des couleurs, le style des ic&#xF4;nes et des boutons, la typographie ainsi que les illustrations.
               .col-lg-4
-                .quality-box
+                .quality-box.wow.fadeInDown
                   = image_tag "uniq.png", class: 'quality-icon'
                   %h5.title
                     Design unique
@@ -200,7 +186,7 @@
 
 
               .col-lg-4
-                .quality-box
+                .quality-box.wow.fadeInDown
                   = image_tag "layers.png", class: 'quality-icon'
                   %h5.title
                     Interfaces intuitives
@@ -211,7 +197,7 @@
 
             .row
               .col-lg-4
-                .quality-box
+                .quality-box.wow.fadeInDown
 
                   = image_tag "responsive.png", class: 'quality-icon'
                   %h5.title
@@ -221,7 +207,7 @@
                     Navigation optimales grace &#xE0; son design responsive qui ajuste automatiquement les dimensions de la page au support num&#xE9;rique utilis&#xE9;.
 
               .col-lg-4
-                .quality-box
+                .quality-box.wow.fadeInDown
 
                   = image_tag "evolution.png", class: 'quality-icon'
                   %h5.title
@@ -231,7 +217,7 @@
                   %p.text
                     L'architecture de d&#xE9;veloppement est donc pens&#xE9; de sorte &#xE0; pouvoir ajouter, modifier ou d&#xE9;sactiver des fonctionnalit&#xE9;s.
               .col-lg-4
-                .quality-box
+                .quality-box.wow.fadeInDown
                   = image_tag "maintenance.png", class: 'quality-icon'
                   %h5.title
                     Produits maintenables

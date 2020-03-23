@@ -1,5 +1,5 @@
-#service-cards {
-  margin-top: 40px;
+#services {
+  margin-top: 100px;
 }
 
 .service-card {
@@ -37,20 +37,7 @@
   /* padding-right: 40px; */
 }
 
-#services {
-  padding-bottom: 100px;
-  /* text-align: center !important; */
-}
 
-.service-card .outline {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 140px; /* Need a specific value to work */
-}
 .service-card h5 {
   /* color: #0C2742; */
   /* -webkit-background-clip: text;

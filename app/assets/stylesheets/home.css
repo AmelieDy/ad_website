@@ -1,34 +1,40 @@
 #home {
   height: 100vh;
-  /* border-bottom-left-radius: 50% 20%;
-  border-bottom-right-radius: 50% 20%; */
-  position: relative;
-  background: url("design1.jpg");
-  background-size: cover;
+  /* border-bottom-left-radius: 50% 20%; */
+  /* border-bottom-right-radius: 50% 20%; */
+  background-image: url('home.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
   color: #FFF;
+  position: relative;
+  text-align: center;
 }
 
 
 .background-home {
-  background: var(--linear-img);
-  height: 100%;
+  background: #A2B0C1;
+  height:100%;
+  width: 40%;
+  position: absolute;
+  top: 0;
 }
 
-/* .home-content {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+.layer-home {
+  position: absolute;
   width: 100%;
+  height: 100%;
+  background: linear-gradient(170deg,#002e4f 1%,rgba(8,70,102,0.8) 100%);
+  background: linear-gradient(220deg,rgba(53,80,160,0.27) 0%,#084666 100%);
+}
 
-  text-align: justify;
-} */
-
-.home-content p {
-  letter-spacing: 0.4em;
-  font-size: 17px;
+.home-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 100px 0px;
 }
 
 .name-header {
@@ -43,91 +49,54 @@
 
 }
 
+.home-img {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(107%) contrast(104%);
+  filter: invert(77%) sepia(32%) saturate(3304%) hue-rotate(117deg) brightness(93%) contrast(101%); */
+  filter: invert(73%) sepia(14%) saturate(323%) hue-rotate(173deg) brightness(94%) contrast(89%);
+  width: 40%;
+}
 
 
 .title-header {
+  font-size: 2em;
+  line-height: 2em;
+  font-weight: 600;
   font-size: 60px;
+  font-family: 'Share Tech', sans-serif;
+
 }
 
-/* .box {
-  background-color: rgba(222, 222, 222, 0.1);
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(60px);
+	}
+}
+
+svg #wheel {
+	animation: scroll ease 2s infinite;
+
+}
+
+// Default stuff.
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+}
+
+.svg-container {
   position: absolute;
-  transform: rotate(45deg);
-  width: 30em;
-  height: 30em;
-  border: 2px solid var(--light-grey);
-  right: -18em;
-  top: 90%;
-  padding: 50px;
-}
-
-.box-2 {
-  background-color: rgba(222, 222, 222, 0.1);
-  position: absolute;
-  transform: rotate(-45deg);
-  width: 30em;
-  height: 30em;
-  border: 2px solid var(--light-grey);
-  left: -18em;
-  top: 40%;
-  padding: 4px;
-} */
-
-/* .box {
-  height: 800px;
-  max-width: 100%;
-  font-size: 2rem;
-}
-
-.box-1 {
-  border: 10px solid;
-  border-image: linear-gradient(to bottom left, #1CD8D2, #93EDC7 );
-  border-image-slice: 60 30;
-} */
-
-.network {
-  position: absolute;
-  width: 800px;
-  /* top: 250px; */
-  right: 50px;
-  height: auto;
-  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(48deg) brightness(111%) contrast(100%);
-  /* opacity: 0.15; */
-}
-
-.home-icon {
-  /* filter: invert(59%) sepia(22%) saturate(3725%) hue-rotate(321deg) brightness(102%) contrast(105%); */
-  z-index: 10;
-}
-
-
-#home .container {
-  position: relative;
-  top: 40%;
-  transform: translateY(-50%);
-  width: 100%;
-}
-/* .box-inside {
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--light-grey);
-} */
-
-.modal-dialog {
-   width: 100% !important;
-   height: 100% !important;
-   margin: 0 !important;
-   padding: 0 !important;
-   max-width:none !important;
-   background: var(--theme-dark);
-}
-
-.modal {
-  padding-right: 0 !important;
-}
-.modal-content {
-   height: auto !important;
-   min-height: 100% !important;
-   border-radius: 0 !important;
-   background-color: var(--theme-dark) !important
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
