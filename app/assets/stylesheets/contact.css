@@ -1,7 +1,48 @@
 #contact {
+  margin-top: 160px;
+}
+
+.image-contact {
   position: relative;
-  background: url("minimal.jpg");
+  background: url("minimal3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  top: 160px;
+  /* background: var(--theme-dark); */
+}
+
+.contact-form {
+  padding: 150px;
+}
+
+.form-control {
+  border: 3px solid transparent;
+  border-radius: 0;
+  font-family: 'Share Tech';
+  background: transparent;
+  border: 3px solid #1c2c47;
+}
+
+.form-control::placeholder {
+  color: #eaeaea;
+  font-size: 16px;
+}
+
+.form-control:focus {
+  border: 3px solid #FFF;
+  background: transparent;
+  color: #FFF;
+}
+
+
+input:required {
+    box-shadow:none !important;
+}
+input:invalid {
+    box-shadow: none !important;
+}
+
+@media screen and (min-width: 0px) and (max-width: 992px) {
+  .image-contact {
+    height: 400px;
+  }
 }

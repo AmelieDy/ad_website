@@ -1,71 +1,26 @@
 #website {
-  margin-top: 250px;
-  /* background: linear-gradient(to bottom, var(--light-grey), #e3e8ee); */
+  /* position: relative;
+  background: url("minimal.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
 }
 
-.box-website {
-  position: absolute;
-  height: 400px;
-  width: 400px;
-  box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
-  left: 200px;
-  top: -300px;
-}
-
-/* .box-website h3 {
-  font-size: 20px;
-  letter-spacing: 4px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  display: block;
-  color: #fff;
-} */
-
-.box-visible {
-  background: #084666;
-  margin-top: 160px;
-  margin-bottom: 30px;
-  float: right;
-  z-index: 10;
-}
-
-/* .box-trust {
-  background: var(--theme-dark);
-  float: left;
-  margin-top: 30px;
-} */
-
-/* .layer-visible {
-  background: #dfdfe1;
-} */
 
 .visible-card {
-  padding: 100px 100px;
-  background: #084666;
-  color: #FFF;
-  box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
-  position: relative;
+  padding: 100px;
 }
 
-.visible-img {
+.website-img-container {
+
+}
+
+.website-img {
   position: absolute;
-  max-width: 130%;
-  height: auto;
-  /* top: -50%; */
-  /* right: -50%; */
-  opacity: 0.8;
-  top: -40px;
-
+  width: 100%;
+  transform: rotate(90deg);
+  right: -20px;
 }
-
-.visible-img-container {
-  position: relative;
-  /* overflow: hidden; */
-
-}
-
 
 @media screen and (min-width: 0px) and (max-width: 992px) {
   .box-website,

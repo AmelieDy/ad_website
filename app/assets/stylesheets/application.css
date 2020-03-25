@@ -1,5 +1,5 @@
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Share+Tech|Raleway:100,300,700,900|Montserrat|Sen|Solway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Baloo+2|Share+Tech|Raleway:100,300,700,900|Montserrat|Sen|Solway&display=swap');
 
 @import 'about.css' screen;
 @import 'animate.css' screen;
@@ -18,30 +18,93 @@
 
 :root {
   --light-grey: #F8F8F8;
-  --theme-dark: #00E2C4;
-  --linear-img: linear-gradient(to left, rgba(8,70,102,0.90), rgba(8,70,102,0.98));
-  --title-linear: linear-gradient(to right, #8480F2, #8d34ed);
+  --theme-dark: #00BAB5;
+  --theme-dark: #ff8a3d;
+  /* --theme-dark: #47D8B3; */
+  /* --theme-dark: #CE4F2F;
+  --theme-dark:   #FFAA4D; */
+
+
+  --linear-bg: linear-gradient(220deg,rgba(53,80,160,0.27) 0%,#141F33 100%);
+  /* --linear-bg: linear-gradient(to bottom left,rgba(21,49,78,0.27) ,#141F33); */
+
+  --linear-dark: linear-gradient(220deg,#4e7c97 0%,#084666 100%);
+
+  --linear-theme: rgba(91,216,221,0.92);
+  --linear-theme: rgba(28,62,255,0.92);
+  /* --linear-theme: linear-gradient(to top right, rgba(201,214,255,0.92), rgba(226,226,226, 0.92));
+  --linear-theme: rgba(35,95,203, 0.95); */
+
+}
+.lighter-grey-bg {
+  background: #e5e5e5;
+}
+.darker-bg {
+ background: #141F33;
 }
 
-.pantone-bg {
-  background: #F96D6C;
-}
-.blue-grey-bg {
-  background: #4e7c97;
+.red-c {
+  background: #CE4F2F;
 }
 
-.light-grey-bg {
-  background: #A2B0C1;
+.dark-bg {
+ background: #003D4E;
 }
 
-.dark-blue-bg {
-  background: #084666;
+.medium-bg {
+  background: #006269;
+
 }
 
-#quality .col-lg-4 {
-  background: #fff;
-  color: #486066;
+.light-bg {
+  background: #ff8a3d;
+
 }
+
+.lighter-bg {
+  background: #FFA727;
+  background: #FFAA4D;
+
+}
+
+.theme-bg {
+  background: rgba(28,62,255,0.92);
+}
+
+
+.white-bg {
+  background: #FFF;
+}
+
+.right {
+  float: right;
+}
+
+.icon-theme {
+  filter: invert(36%) sepia(15%) saturate(660%) hue-rotate(145deg) brightness(90%) contrast(87%);
+}
+
+.icon-white {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(107%) contrast(104%);
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.layer-home {
+  background: var(--linear-bg);
+}
+
+.layer-theme {
+  background: rgba(255,138,61,0.82);
+  /* background: linear-gradient(to bottom left,rgba(200,203,203,0.5), rgba(28,62,255,0.92)); */
+
+}
+
+
 body {
   overflow-x: hidden;
   margin: 0 auto;
@@ -51,8 +114,10 @@ body {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.9em;
+  font-weight: 100;
+  font-family: 'Baloo 2';
 }
 
 .about-title {

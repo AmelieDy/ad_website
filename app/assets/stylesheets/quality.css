@@ -1,31 +1,36 @@
 #quality {
-  margin-top: 250px;
-}
-.text {
-  line-height: 2em;
-  font-size: 14px;
-  /* color: #FFF; */
-  font-weight: 400;
-  margin-top: 0;
+  padding-top: 150px;
+  /* background: #2B3443;
+  background: #FFF; */
+
 }
 
+#quality .col-lg-4 {
+  margin-bottom: 20px;
+}
+
+
+
 .quality-box {
-  /* background: var(--theme-dark); */
-  padding: 50px;
+  position: relative;
   text-align: center;
+  padding: 46px;
+  height: 100%;
+  box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
+
 }
 
 .quality-box h5 {
-  font-size: 16px;
+  font-size: 22px;
   margin: 0;
   display: block;
-  padding-bottom: 40px;
-  font-weight: 600;
+  margin-bottom: 26px;
+  font-weight: 300;
   position: relative;
-  /* color: var(--theme-dark); */
+  font-family: 'Share Tech';
 }
 
-.quality-box h5:after {
+/* .quality-box h5:after {
   content: '';
   width: 10%;
   height: 2px;
@@ -34,21 +39,19 @@
   bottom: 20px;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 .quality-icon {
-  width: 42px;
-  margin-bottom: 24px;
+  width: 56px;
+  margin-bottom: 26px;
   /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(107%) contrast(104%); */
-  filter: invert(77%) sepia(32%) saturate(3304%) hue-rotate(117deg) brightness(93%) contrast(101%);
-
-}
-.layer-color {
-  background: #dfdfe1;
+  /* filter: invert(77%) sepia(32%) saturate(3304%) hue-rotate(117deg) brightness(93%) contrast(101%); */
 }
 
 .quality-background {
-  box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
+  /* box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12); */
+  color: #486066;
+  /* color: #FFF; */
 }
 /* .quality-box-content {
   position: relative;
@@ -69,5 +72,9 @@
 
   .quality-card h5 {
     width: 40%;
+  }
+
+  #quality .container {
+    padding: 0;
   }
 }

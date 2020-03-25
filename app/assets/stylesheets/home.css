@@ -21,14 +21,6 @@
   top: 0;
 }
 
-.layer-home {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(170deg,#002e4f 1%,rgba(8,70,102,0.8) 100%);
-  background: linear-gradient(220deg,rgba(53,80,160,0.27) 0%,#084666 100%);
-}
-
 .home-content {
   position: absolute;
   left: 50%;
@@ -64,11 +56,14 @@
 
 .title-header {
   font-size: 2em;
-  line-height: 2em;
-  font-weight: 600;
-  font-size: 60px;
+  font-weight: 400;
+  font-size: 5em;
   font-family: 'Share Tech', sans-serif;
+  margin-bottom: 60px;
+}
 
+.theme-2-color {
+  color: var(--theme-dark);
 }
 
 @keyframes scroll {

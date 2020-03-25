@@ -1,13 +1,11 @@
 .btn-theme {
   background: var(--theme-dark);
   color: #FFF;
-  padding: 12px;
-  margin-top: 20px;
-  font-size: 14px;
-  font-weight:400;
-  text-transform: uppercase;
-  cursor: pointer;
-  display: inline-block;
+  /* text-transform: uppercase; */
+  padding: 10px 26px;
+  font-family: 'Share Tech';
+  font-size: 20px;
+  border-radius: 0px;
 }
 
 

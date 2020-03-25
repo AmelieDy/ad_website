@@ -1,36 +1,27 @@
 #services {
-  margin-top: 100px;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background: linear-gradient(to top, var(--light-grey), white)
+
 }
 
 .service-card {
   margin-bottom: 20px;
   overflow: hidden;
-  background: #FFF;
   padding: 40px;
   box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
   height: 100%;
+  color: #486066;
+
   /* background: var(--theme-dark); */
 }
 
-.website-service {
-  background: #4e7c97;
-  color: #FFF;
-}
-
-.website-service .service-icon,
-.app-service .service-icon {
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(107%) contrast(104%);
-}
-
-.app-service {
-  background: #A2B0C1;
-  color: #FFF;
-}
 
 .service-icon {
   width: 42px;
   margin-bottom: 24px;
 }
+
 
 .service-content {
   /* margin-left: 55px; */
@@ -39,13 +30,12 @@
 
 
 .service-card h5 {
-  /* color: #0C2742; */
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  font-size: 18px;
+  font-size: 22px;
   margin: 0;
-  display:inline-block;
-  margin-bottom: 20px;
-  font-weight: 600;
+  display: block;
+  margin-bottom: 26px;
+  font-weight: 300;
+  position: relative;
+  font-family: 'Share Tech';
   text-transform: capitalize;
 }

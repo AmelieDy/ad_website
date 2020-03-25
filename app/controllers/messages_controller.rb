@@ -5,13 +5,16 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new message_params
     MessageMailer.submission(@message).deliver_now
-    render :new
+    respond_to do |format|
+      format.js
+    end
+    # flash.now[:notice] = "We have exactly books available."
   end
 
   private
 
   def message_params
-    params.require(:message).permit(:name, :email, :body)
+    params.require(:message).permit(:name, :firstname, :email, :body)
   end
 
 end
