@@ -41,7 +41,7 @@
             %span.theme-2-color web
 
           %br
-          %span.btn.btn-theme.btn-circle.btn-lg Contactez-moi
+          %span.btn.btn-theme.btn-circle.btn-lg.wow.bounceInDown Contactez-moi
 
 
 
@@ -50,49 +50,44 @@
       .container
         .row
           .col-lg-12
-            %h5.title-sm Mes services
+            %h5.title-sm.wow.fadeInDown Mes services
             %h3.title-lg Du sur mesure pour vos projets
 
 
         .row
           .col-lg-4
-            .service-card.website-service.wow.bounceInLeft.light-bg.text-white
+            .service-card.website-service.light-bg.text-white
               .background-service
                 = image_tag "network.png", class: "service-icon icon-white"
                 .service-content
-                  %h5.service-item sites vitrine
+                  %h5.service-item.wow.fadeInDown sites vitrine
                   %p Soyez visible sur le web grâce à un site vitrine sur mesure, mettant en avant vos produits, services et valeurs.
           .col-lg-4
-            .service-card.app-service.wow.bounceInDown.lighter-grey-bg
+            .service-card.app-service.lighter-grey-bg
               .background-service
                 = image_tag "support.png", class: "service-icon icon-theme"
                 .service-content
-                  %h5.service-item applications web
+                  %h5.service-item.wow.fadeInDown applications web
                   %p Optimisez et automatisez vos tâches du quodidien à travers un développement spécifique à vos besoins.
           .col-lg-4
-            .service-card.integration-service.wow.bounceInRight.white-bg
+            .service-card.integration-service.white-bg
               .background-service
                 = image_tag "layers.png", class: "service-icon icon-theme"
                 .service-content
-                  %h5.service-item intégration
+                  %h5.service-item.wow.fadeInDown intégration
                   %p Traduction de maquettes graphiques en code, assemblant tous les &#xE9;lements de la mise en page du site web de fa&#xE7;on optimale.
 
     #website
       .container
-
         .row
           .col-lg-4
-
-
             = image_tag 'mouse.png', class: 'website-img'
             -# .layer.layer-theme
-
-
           .col-lg-8
 
             .visible-card.darker-bg.text-white
 
-              %h5.title-sm.wow.fadeInDown Soyez visible
+              %h5.title-sm.light.wow.fadeInDown Soyez visible
               %h3.title-lg.light Un investissement sur le long terme
 
               %p
@@ -111,7 +106,7 @@
         .row
           .col-lg-12.text-center
 
-            %h5.title-sm plus
+            %h5.title-sm.wow.fadeInDown plus
             %h3.title-lg Ma charte qualité
             / <h1 class="title-lg rellax" data-rellax-speed="1">Charte qualité</h1>
 
@@ -157,7 +152,7 @@
                       Responsive design
 
                     %p.text
-                      Navigation optimales grace &#xE0; son design responsive qui ajuste automatiquement les dimensions de la page au support num&#xE9;rique utilis&#xE9;.
+                      Navigation optimales grace à son design responsive qui ajuste automatiquement les dimensions de la page au support numérique utilisé.
 
                 .col-lg-4
                   .quality-box.darker-bg.text-white
@@ -168,7 +163,7 @@
 
 
                     %p.text
-                      L'architecture de d&#xE9;veloppement est donc pens&#xE9; de sorte &#xE0; pouvoir ajouter, modifier ou d&#xE9;sactiver des fonctionnalit&#xE9;s.
+                      L'architecture de développement est pensé de sorte à pouvoir ajouter, modifier ou désactiver des fonctionnalités.
                 .col-lg-4
                   .quality-box.lighter-bg.text-white
                     = image_tag "maintenance.png", class: 'quality-icon icon-white'
@@ -177,8 +172,8 @@
 
 
                     %p.text
+                      Simplification de la maintenance et des mises à jours, rigueur dans le respect des normes de codage.
 
-                      La rigueur dans le respect des normes de codage permet de simplifier la maintenance et les mises &#xE0; jour.
 
 
       #contact
@@ -190,12 +185,13 @@
 
 
           .col-lg-6.contact-form.darker-bg.text-white
-            %h5.title-sm Contact
+            %h5.title-sm.light.wow.fadeInDown Contact
             %h3.title-lg.light Discutons de votre projet !
-            = form_for @message, remote: true, url: messages_path do |f|
+            = form_for @message, remote: true, id: 'contact-form', url: messages_path do |f|
               .row
                 .col-md-6
                   .form-group
+                    .error
                     = f.text_field  :name, required: true, placeholder: "Nom", class: "form-control"
                 .col-md-6
                   .form-group
@@ -204,10 +200,15 @@
                 .col-md-12
 
                   .form-group.text-white
-                    = f.text_field :email, required: true,placeholder: "Email", class: "form-control"
+                    = f.email_field :email, required: true,placeholder: "Email" ,class: "form-control"
                   .form-group
-                    = f.text_area :body, rows: 8, cols: 40, required: true, placeholder: 'Message', class: "form-control"
+                    = f.text_area :body,  required: true, placeholder: 'Message', class: "form-control"
+
+                  %button.submit.right.btn.btn-theme.wow.fadeInDown
+                    %span.initial-content Envoyer
+                    %span.sending-content.hide
+                      = image_tag 'three-dots.svg', class: 'loading-svg'
+                    %span.sent-content.hide Envoyé !
 
 
-                  %span.right
-                    = f.submit 'Envoyer', class: 'btn btn-theme'
+                    -# = f.submit 'Envoyer', class: 'submit btn btn-theme'

@@ -8,6 +8,11 @@
   border-radius: 0px;
 }
 
+.btn-theme:hover {
+  background: #f98e3b;
+  color: #FFF;
+}
+
 
 .btn.btn-link {
     width: 30px;

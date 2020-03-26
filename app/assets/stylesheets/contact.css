@@ -14,31 +14,70 @@
   padding: 150px;
 }
 
-.form-control {
-  border: 3px solid transparent;
-  border-radius: 0;
-  font-family: 'Share Tech';
+.form-control, textarea  {
+  font-family: 'Baloo 2';
   background: transparent;
-  border: 3px solid #1c2c47;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  color: var(--light-grey);
+  padding: 20px 0px;
+  font-size: 18px;
+  margin-top: 40px;
+  border-bottom: 3px solid #525c6d;
+  font-weight: 400;
+
 }
 
 .form-control::placeholder {
-  color: #eaeaea;
-  font-size: 16px;
+  color: #525c6d;
+  font-size: 18px;
+  font-weight: 400;
+
 }
 
 .form-control:focus {
-  border: 3px solid #FFF;
+  border: 0;
+  border-radius: 0;
   background: transparent;
-  color: #FFF;
-}
+  color: var(--light-grey);
+  border-bottom: 3px solid #36435b;
+  border-bottom: 3px solid var(--theme-dark);
+  border-bottom: 3px solid #d5d5e5;
 
 
-input:required {
-    box-shadow:none !important;
 }
+textarea:focus {
+    box-shadow: none !important;
+
+}
+
 input:invalid {
     box-shadow: none !important;
+}
+
+input:valid, textarea:valid {
+  box-shadow: none !important;
+  border-bottom: 3px solid #FBB03B;
+  /* border-bottom: 3px solid #309bff;
+  border-bottom: 3px solid #47d8b3; */
+}
+
+.loading-svg {
+  width: 50px;
+}
+
+.submit {
+  width: 180px;
+  margin-top: 40px;
+}
+
+label.error {
+  font-size: 16px;
+  font-family: 'Baloo 2';
+  font-weight: 600;
+  color: var(--theme-dark);
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 992px) {

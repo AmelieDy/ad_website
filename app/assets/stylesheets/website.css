@@ -11,6 +11,10 @@
   padding: 100px;
 }
 
+.visible-card p {
+  color: #e5e5e5;
+}
+
 .website-img-container {
 
 }

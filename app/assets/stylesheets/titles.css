@@ -25,7 +25,7 @@ h1 {
 }
 
 .light {
-  color: #FFF;
+  color: var(--light-grey);
 }
 
 .dark {
@@ -34,12 +34,16 @@ h1 {
 
 
 .title-sm {
-  color: var(--theme-dark);
+  color: #f98e3b;
   margin: 0;
   font-weight: 600 !important;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.2em;
   margin-bottom: 20px;
   display: block;
+}
+.title-sm.light {
+  color: var(--theme-dark);
+
 }
