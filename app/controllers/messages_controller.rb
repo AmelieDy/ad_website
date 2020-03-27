@@ -4,11 +4,10 @@ class MessagesController < ApplicationController
   end
   def create
     @message = Message.new message_params
-    # MessageMailer.submission(@message).deliver_now
+    MessageMailer.submission(@message).deliver_now
     respond_to do |format|
       format.js
     end
-    # flash.now[:notice] = "We have exactly books available."
   end
 
   private

@@ -1,47 +1,58 @@
 .navbar {
   position: fixed !important;
   width: 100%;
-  /* background: RGBA(0,0,0,0.5); */
   top: 0;
   z-index: 1000;
-  height: 3.5em;
-  padding-top: 40px;
+  padding: 16px 0px;
 }
 
-.navbar a {
-  color: #FFF !important;
+.navbar-transparent {
+  background: transparent;
+  transition: 1s ease;
+}
+
+.navbar-light {
+  background: #FFF;
+  transition: 1s ease;
+  box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
+}
+
+.navbar li>a {
   text-transform: uppercase;
+  font-family: 'Baloo 2';
+  font-weight: 300;
+  letter-spacing: 0.2em;
 }
 
-.navbar li:before {
-  content: '';
-  width: 10%;
-  height: 2px;
-  background: #A2B0C1;
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.navbar-transparent li>a {
+  color: #FFF !important;
 }
 
-.navbar li.active:before {
-  background: var(--theme-dark);
+.navbar-light li>a {
+  color: #6D788F !important;
 }
+
+.navbar a:hover {
+  font-weight: 600;
+}
+
+/* .navbar-light a:hover {
+  color: var(--theme-light) !important;
+} */
 
 
 .navbar li {
   width: 200px;
-  position: relative;
   text-align: center;
 }
 
 .navbar-brand {
-  font-family: 'Cedarville Cursive';
+  font-family: 'Cedarville Cursive' !important;
   letter-spacing: -2px;
   border-radius: 50%;
   padding: 0;
   font-size: 30px !important;
-  background: var(--theme-dark);
+  background: var(--theme-light);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-right: 2px;

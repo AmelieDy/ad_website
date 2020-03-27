@@ -1,5 +1,5 @@
 .btn-theme {
-  background: var(--theme-dark);
+  background: var(--theme-light);
   color: #FFF;
   /* text-transform: uppercase; */
   padding: 10px 26px;
@@ -9,7 +9,7 @@
 }
 
 .btn-theme:hover {
-  background: #f98e3b;
+  background: var(--theme-dark);
   color: #FFF;
 }
 

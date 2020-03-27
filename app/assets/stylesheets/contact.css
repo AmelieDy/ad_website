@@ -76,7 +76,7 @@ label.error {
   font-size: 16px;
   font-family: 'Baloo 2';
   font-weight: 600;
-  color: var(--theme-dark);
+  color: var(--theme-light);
   margin-top: 10px;
 }
 

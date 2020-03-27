@@ -29,6 +29,32 @@ $(document).ready(function() {
       $('.initial-content').hide();
     }
   });
+
+  function scroll_nav() {
+    var scroll = $(window).scrollTop();
+    if(scroll < 200){
+      $('.navbar').removeClass('navbar-light');
+      $('.navbar').addClass('navbar-transparent');
+    } else{
+      $('.navbar').addClass('navbar-light');
+      $('.navbar').removeClass('navbar-transparent');
+      // $('.navbar').css('transition', '1s ease');
+    }
+  }
+
+  scroll_nav();
+
+  $(window).scroll(function(){
+    scroll_nav();
+  });
+
+  $(document).on('click', 'a[href^="#"]', function (event) {
+    wow.init();
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+  });
 });
 
 // funtion(){

@@ -1,7 +1,7 @@
 #wrapper
   / Page Content
   #page-content-wrapper
-    %nav.navbar.navbar-expand-lg.navbar-light
+    %nav.navbar.navbar-expand-lg.navbar-transparent
       .container
         %a.navbar-brand.hvr-sweep-to-right{:href => "#"} AD
         %button.navbar-toggler{"aria-controls" => "navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
@@ -13,15 +13,15 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
             %li.nav-item.active
-              %a.nav-link{:href => "#"}
+              %a.nav-link{:href => "#services"}
                 Services
 
 
             %li.nav-item
-              %a.nav-link{:href => "#"} Charte qualité
+              %a.nav-link{:href => "#quality"} Charte qualité
 
             %li.nav-item
-              %a.nav-link{:href => "#"} Contact
+              %a.nav-link{:href => "#contact"} Contact
     #home
       -# = image_tag 'it-services-03.png', class: 'home-img'
       .layer.layer-home
@@ -31,46 +31,36 @@
           %svg{:height => "100%", :style => "fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;", :version => "1.1", :viewbox => "0 0 247 390", :width => "40px", :xmlns => "http://www.w3.org/2000/svg", "xmlns:xlink" => "http://www.w3.org/1999/xlink"}
             %path#wheel{:d => "M123.359,79.775l0,72.843", :style => "fill:none;stroke:#fff;stroke-width:20px;"}
             %path#mouse{:d => "M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z", :style => "fill:none;stroke:#fff;stroke-width:20px;"}
-
-
         .home-content
-
-          %h2.title-header
-            Création de sites
-            & applications
-            %span.theme-2-color web
-
-          %br
-          %span.btn.btn-theme.btn-circle.btn-lg.wow.bounceInDown Contactez-moi
-
-
+          %h1.name-header Amélie Delory
+          %h2.title-header Création de sites et applications web
+          %span.btn.btn-theme.btn-circle.btn-lg.wow.fadeInDown{'data-wow-offset': 0 } Contactez-moi
 
     #services
-
       .container
         .row
-          .col-lg-12
+          .col-lg-12.center-sm
             %h5.title-sm.wow.fadeInDown Mes services
             %h3.title-lg Du sur mesure pour vos projets
 
 
         .row
           .col-lg-4
-            .service-card.website-service.light-bg.text-white
+            .service-card.theme-dark-bg.text-white.center-sm
               .background-service
                 = image_tag "network.png", class: "service-icon icon-white"
                 .service-content
                   %h5.service-item.wow.fadeInDown sites vitrine
                   %p Soyez visible sur le web grâce à un site vitrine sur mesure, mettant en avant vos produits, services et valeurs.
           .col-lg-4
-            .service-card.app-service.lighter-grey-bg
+            .service-card.lighter-grey-bg.center-sm
               .background-service
                 = image_tag "support.png", class: "service-icon icon-theme"
                 .service-content
                   %h5.service-item.wow.fadeInDown applications web
                   %p Optimisez et automatisez vos tâches du quodidien à travers un développement spécifique à vos besoins.
           .col-lg-4
-            .service-card.integration-service.white-bg
+            .service-card.white-bg.center-sm
               .background-service
                 = image_tag "layers.png", class: "service-icon icon-theme"
                 .service-content
@@ -91,11 +81,13 @@
               %h3.title-lg.light Un investissement sur le long terme
 
               %p
-                Une vitrine disponible en tout temps et accessible de partout, c’est une porte de communication et de présentation pour vous, ce que vous faites et vos valeurs.
-
-                90% des français effectuent une recherche sur votre entreprise avant d'acheter un service ou un produit, d'où l'importance d'être visible facilement, et avoir de nouveaux clients...
+                Aujourd'hui, presque 90% des français se fient sur le web avant d'acheter un service ou un produit.
                 %br
-                Une vitrine disponible en tout temps et accessible de partout, c’est une porte de communication et de présentation pour vous, ce que vous faites et vos valeurs.
+                Votre site vitrine, c’est une porte de communication et de présentation pour vous, ce que vous faites et vos valeurs, disponible en tout temps et accessible de partout.
+                %br
+                Le simple fait d'exister sur le web augmente votre notoriété et renforce votre crédibilité.
+                %br
+
               %br
               %strong
                 %span.btn.btn-theme.wow.fadeInDown Parlez moi de votre projet
@@ -105,85 +97,57 @@
       .container
         .row
           .col-lg-12.text-center
-
             %h5.title-sm.wow.fadeInDown plus
             %h3.title-lg Ma charte qualité
-            / <h1 class="title-lg rellax" data-rellax-speed="1">Charte qualité</h1>
-
         .row
-          .col-lg-12
-            .quality-background
-              .row
-                .col-lg-4
-                  .quality-box.light-bg.text-white
-                    = image_tag "detail.png", class: 'quality-icon icon-white'
-                    %h5.title
-                      Sens du détail
-
-                    %p.text
-                      Chaque détail compte : le choix des couleurs, le style des ic&#xF4;nes et des boutons, la typographie ainsi que les illustrations.
-                .col-lg-4
-                  .quality-box.lighter-grey-bg
-                    = image_tag "uniq.png", class: 'quality-icon icon-theme'
-                    %h5.title
-                      Design unique
-
-
-                    %p.text
-                      Création d'un univers graphique unique permettant de refléter au mieux votre identité et vos valeurs.
-
-
-                .col-lg-4
-                  .quality-box.white-bg
-                    = image_tag "layers.png", class: 'quality-icon icon-theme'
-                    %h5.title
-                      Interfaces intuitives
-
-
-                    %p.text
-                      Expérience utilisateur agréable et fluide à travers des fonctionnalités simples et intelligibles.
-
-              .row
-                .col-lg-4
-                  .quality-box.white-bg
-
-                    = image_tag "responsive.png", class: 'quality-icon icon-theme'
-                    %h5.title
-                      Responsive design
-
-                    %p.text
-                      Navigation optimales grace à son design responsive qui ajuste automatiquement les dimensions de la page au support numérique utilisé.
-
-                .col-lg-4
-                  .quality-box.darker-bg.text-white
-
-                    = image_tag "evolution.png", class: 'quality-icon icon-white'
-                    %h5.title
-                      Développement évolutif
-
-
-                    %p.text
-                      L'architecture de développement est pensé de sorte à pouvoir ajouter, modifier ou désactiver des fonctionnalités.
-                .col-lg-4
-                  .quality-box.lighter-bg.text-white
-                    = image_tag "maintenance.png", class: 'quality-icon icon-white'
-                    %h5.title
-                      Produits maintenables
-
-
-                    %p.text
-                      Simplification de la maintenance et des mises à jours, rigueur dans le respect des normes de codage.
-
-
+          .col-lg-4
+            .quality-card.theme-dark-bg.text-white
+              = image_tag "detail.png", class: 'quality-icon icon-white'
+              %h5.title
+                Sens du détail
+              %p.text
+                Chaque détail compte : le choix des couleurs, le style des ic&#xF4;nes et des boutons, la typographie ainsi que les illustrations.
+          .col-lg-4
+            .quality-card.lighter-grey-bg
+              = image_tag "uniq.png", class: 'quality-icon icon-theme'
+              %h5.title
+                Design unique
+              %p.text
+                Création d'un univers graphique unique permettant de refléter au mieux votre identité et vos valeurs.
+          .col-lg-4
+            .quality-card.white-bg
+              = image_tag "layers.png", class: 'quality-icon icon-theme'
+              %h5.title
+                Interfaces intuitives
+              %p.text
+                Expérience utilisateur agréable et fluide à travers des fonctionnalités simples et intelligibles.
+        .row.margin-sm
+          .col-lg-4
+            .quality-card.white-bg
+              = image_tag "responsive.png", class: 'quality-icon icon-theme'
+              %h5.title
+                Responsive design
+              %p.text
+                Navigation optimales grace à son design responsive qui ajuste automatiquement les dimensions de la page au support numérique utilisé.
+          .col-lg-4
+            .quality-card.darker-bg.text-white
+              = image_tag "evolution.png", class: 'quality-icon icon-white'
+              %h5.title
+                Développement évolutif
+              %p.text
+                L'architecture de développement est pensé de sorte à pouvoir ajouter, modifier ou désactiver des fonctionnalités.
+          .col-lg-4
+            .quality-card.theme-light-bg.text-white
+              = image_tag "maintenance.png", class: 'quality-icon icon-white'
+              %h5.title
+                Produits maintenables
+              %p.text
+                Simplification de la maintenance et des mises à jours, rigueur dans le respect des normes de codage.
 
       #contact
         .row
           .col-lg-6.image-contact
             .layer.layer-home
-
-
-
-
           .col-lg-6.contact-form.darker-bg.text-white
             %h5.title-sm.light.wow.fadeInDown Contact
             %h3.title-lg.light Discutons de votre projet !
