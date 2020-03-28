@@ -1,8 +1,5 @@
 #quality {
   padding-top: 150px;
-  /* background: #2B3443;
-  background: #FFF; */
-
 }
 
 .quality-card {
@@ -24,23 +21,25 @@
   font-family: 'Share Tech';
 }
 
-/* .quality-box h5:after {
-  content: '';
-  width: 10%;
-  height: 2px;
-  background: var(--theme-dark);
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-
 .quality-icon {
   width: 56px;
   margin-bottom: 26px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 992px) {
+  svg {
+    width: 20px;
+  }
+  p {
+    font-size: 14px !important;
+  }
+  .ml3 {
+    font-size: 2em;
+  }
+  .btn-theme {
+    padding: 10px;
+    font-size: 18px;
+  }
   .container {
     padding: 0;
   }
@@ -64,5 +63,9 @@
 
   #contact {
     margin-top: 0;
+  }
+
+  #services {
+    margin-top: 60px !important;
   }
 }

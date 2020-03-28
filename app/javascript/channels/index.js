@@ -53,7 +53,7 @@ $(document).ready(function() {
     event.preventDefault();
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
+    }, 300);
   });
 
   var textWrapper = document.querySelector('.ml3');

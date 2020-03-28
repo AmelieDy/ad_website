@@ -6,6 +6,7 @@
   background-attachment: fixed;
   overflow: hidden;
   color: #FFF;
+  text-align:center;
 }
 
 
@@ -52,7 +53,7 @@ svg #wheel {
 
 .svg-container {
   position: absolute;
-  bottom: 0px;
+  bottom: 15px;
   left: 50%;
   transform: translate(-50%, -50%);
 }

@@ -3,11 +3,12 @@
   #page-content-wrapper
     %nav.navbar.navbar-expand-lg.navbar-transparent
       .container
-        %a.navbar-brand.hvr-sweep-to-right{:href => "#"} AD
+        %a.navbar-brand.hvr-sweep-to-right{:href => "#home"} AD
         %button.navbar-toggler{"aria-controls" => "navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
           %span.navbar-toggler-icon
+            %i.fa.fa-navicon
         #navbar.collapse.navbar-collapse
-          %ul.navbar-nav.ml-auto
+          %ul.navbar-nav.ml-auto.right
             %li.nav-item.active
               %a.nav-link{:href => "#services"} Services
             %li.nav-item
@@ -23,8 +24,7 @@
         .home-content
           %h1.ml3
             Création de sites et applications web
-          %a.btn.btn-theme.contact-btn-home.wow.fadeInDown{'data-wow-offset': 0, href: "#contact"} Contact
-
+          %a.btn.btn-theme.contact-btn-home.wow.fadeInDown{'data-wow-offset': 0, href: "#contact"} Me contacter
 
     #services
       .container
@@ -45,7 +45,7 @@
               .background-service
                 = image_tag "support.png", class: "service-icon icon-theme"
                 .service-content
-                  %h5.service-itemapplications web
+                  %h5.service-itemapplications Applications web
                   %p Optimisez et automatisez vos tâches du quodidien à travers un développement spécifique à vos besoins.
           .col-lg-4
             .service-card.white-bg.center-sm.wow.bounceInRight
@@ -152,8 +152,7 @@
                     = f.text_area :body,  required: true, placeholder: 'Message', class: "form-control"
               .row
                 .col-md-12
-
-                  %button.submit.right.btn.btn-theme.wow.fadeInDown
+                  %button.submit.btn.btn-theme.wow.fadeInDown{'data-wow-offset': 0}
                     %span.initial-content Envoyer
                     %span.sending-content.hide
                       = image_tag 'three-dots.svg', class: 'loading-svg'
