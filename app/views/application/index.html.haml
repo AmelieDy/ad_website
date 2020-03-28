@@ -21,8 +21,9 @@
         .svg-container
           = render 'svg_mouse.html.haml'
         .home-content
-          %h1.ml3 Création de sites et applications web
-          %span.btn.btn-theme.contact-btn-home Contact
+          %h1.ml3
+            Création de sites et applications web
+          %a.btn.btn-theme.contact-btn-home.wow.fadeInDown{'data-wow-offset': 0, href: "#contact"} Contact
 
 
     #services
@@ -33,25 +34,25 @@
             %h3.title-lg Du sur mesure pour vos projets
         .row
           .col-lg-4
-            .service-card.theme-dark-bg.text-white.center-sm
+            .service-card.theme-dark-bg.text-white.center-sm.wow.bounceInLeft
               .background-service
                 = image_tag "network.png", class: "service-icon icon-white"
                 .service-content
-                  %h5.service-item.wow.fadeInDown sites vitrine
+                  %h5.service-item sites vitrine
                   %p Soyez visible sur le web grâce à un site vitrine sur mesure, mettant en avant vos produits, services et valeurs.
           .col-lg-4
-            .service-card.lighter-grey-bg.center-sm
+            .service-card.lighter-grey-bg.center-sm.wow.bounceInDown
               .background-service
                 = image_tag "support.png", class: "service-icon icon-theme"
                 .service-content
-                  %h5.service-item.wow.fadeInDown applications web
+                  %h5.service-itemapplications web
                   %p Optimisez et automatisez vos tâches du quodidien à travers un développement spécifique à vos besoins.
           .col-lg-4
-            .service-card.white-bg.center-sm
+            .service-card.white-bg.center-sm.wow.bounceInRight
               .background-service
                 = image_tag "layers.png", class: "service-icon icon-theme"
                 .service-content
-                  %h5.service-item.wow.fadeInDown intégration
+                  %h5.service-item intégration
                   %p Traduction de maquettes graphiques en code, assemblant tous les &#xE9;lements de la mise en page du site web de fa&#xE7;on optimale.
 
     #website
@@ -63,7 +64,6 @@
 
             %h5.title-sm.light.wow.fadeInDown Soyez visible
             %h3.title-lg.light Un investissement sur le long terme
-
             %p
               Aujourd'hui, presque 90% des français se fient à leurs recherches sur le web avant d'acheter un service ou un produit.
               %br
@@ -73,7 +73,7 @@
               %br
             %br
             %strong
-              %span.btn.btn-theme.wow.fadeInDown Parlez moi de votre projet
+              %a.btn.btn-theme.wow.fadeInDown{href: "#contact"} Parlez moi de votre projet
 
     #quality
       .container
@@ -83,21 +83,21 @@
             %h3.title-lg Ma charte qualité
         .row
           .col-lg-4
-            .quality-card.theme-dark-bg.text-white
+            .quality-card.theme-dark-bg.text-white.wow.flipInX
               = image_tag "detail.png", class: 'quality-icon icon-white'
               %h5.title
                 Sens du détail
               %p.text
                 Chaque détail compte : le choix des couleurs, le style des ic&#xF4;nes et des boutons, la typographie ainsi que les illustrations.
           .col-lg-4
-            .quality-card.lighter-grey-bg
+            .quality-card.lighter-grey-bg.wow.flipInY
               = image_tag "uniq.png", class: 'quality-icon icon-theme'
               %h5.title
                 Design unique
               %p.text
                 Création d'un univers graphique unique permettant de refléter au mieux votre identité et vos valeurs.
           .col-lg-4
-            .quality-card.white-bg
+            .quality-card.white-bg.wow.flipInX
               = image_tag "layers.png", class: 'quality-icon icon-theme'
               %h5.title
                 Interfaces intuitives
@@ -105,21 +105,21 @@
                 Expérience utilisateur agréable et fluide à travers des fonctionnalités simples et intelligibles.
         .row.margin-sm
           .col-lg-4
-            .quality-card.white-bg
+            .quality-card.white-bg.wow.flipInY
               = image_tag "responsive.png", class: 'quality-icon icon-theme'
               %h5.title
                 Responsive design
               %p.text
                 Navigation optimales grace à son design responsive qui ajuste automatiquement les dimensions de la page au support numérique utilisé.
           .col-lg-4
-            .quality-card.darker-bg.text-white
+            .quality-card.darker-bg.text-white.wow.flipInX
               = image_tag "evolution.png", class: 'quality-icon icon-white'
               %h5.title
                 Développement évolutif
               %p.text
                 L'architecture de développement est pensé de sorte à pouvoir ajouter, modifier ou désactiver des fonctionnalités.
           .col-lg-4
-            .quality-card.theme-light-bg.text-white
+            .quality-card.theme-light-bg.text-white.wow.flipInY
               = image_tag "maintenance.png", class: 'quality-icon icon-white'
               %h5.title
                 Produits maintenables

@@ -65,25 +65,8 @@ $(document).ready(function() {
       opacity: [0,1],
       easing: "easeInOutQuad",
       duration: 2250,
-      delay: (el, i) => 50 * (i+1)
+      delay: (el, i) => 40 * (i+1)
     });
-  });
-
-// funtion(){
-//   message = $(this).data('message-id');
-//   console.log(message);
-//   $.ajax({
-//     url: "/messages",
-//     type: "POST",
-//     data: {
-//       message_params: message
-//     },
-//     dataType: 'script',
-//     success: function() {
-//       $('.sending-content').hide();
-//       $('.sent-content').show();
-//     }
-//     // error: function(data) {}
-//   })
-//   console.log('eho');
-// }
+  $('.contact-btn-home').hide();
+  $('.contact-btn-home').delay(2200).show(0);
+});

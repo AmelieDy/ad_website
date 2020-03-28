@@ -73,6 +73,10 @@
   background: var(--linear-bg);
 }
 
+a:active {
+  border: 0;
+}
+
 body {
   overflow-x: hidden;
   margin: 0 auto;
