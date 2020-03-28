@@ -18,26 +18,9 @@
 
 :root {
   --light-grey: #F8F8F8;
-  --theme-dark: #00BAB5;
-  --theme-dark: #F47A55;
   --theme-dark: #F47A55;
   --theme-light: #fbb03b;
-
-  /* --theme-dark: #47D8B3; */
-  /* --theme-dark: #CE4F2F;
-  --theme-dark:   #FFAA4D; */
-
-
   --linear-bg: linear-gradient(220deg,rgba(53,80,160,0.27) 0%,#141F33 100%);
-  /* --linear-bg: linear-gradient(to bottom left,rgba(21,49,78,0.27) ,#141F33); */
-
-  --linear-dark: linear-gradient(220deg,#4e7c97 0%,#084666 100%);
-
-  --linear-theme: rgba(91,216,221,0.92);
-  --linear-theme: rgba(28,62,255,0.92);
-  /* --linear-theme: linear-gradient(to top right, rgba(201,214,255,0.92), rgba(226,226,226, 0.92));
-  --linear-theme: rgba(35,95,203, 0.95); */
-
 }
 
 .lighter-grey-bg {
@@ -47,17 +30,12 @@
   background: #141F33;
 }
 
-.red-c {
-  background: #CE4F2F;
-}
-
 .dark-bg {
  background: #003D4E;
 }
 
 .medium-bg {
   background: #006269;
-
 }
 
 .theme-dark-bg {
@@ -66,14 +44,11 @@
 
 .theme-light-bg {
   background: var(--theme-light);
-
-
 }
 
 .theme-bg {
   background: rgba(28,62,255,0.92);
 }
-
 
 .white-bg {
   background: #FFF;
@@ -97,8 +72,6 @@
   height: 100%;
   background: var(--linear-bg);
 }
-
-
 
 body {
   overflow-x: hidden;
@@ -160,6 +133,8 @@ p {
 .margin-sm {
   margin-top: 30px;
 }
+
+
 #page-content-wrapper {
   min-width: 100vw;
   margin-left: 0;

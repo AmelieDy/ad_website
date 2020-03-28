@@ -6,49 +6,25 @@
   background-attachment: fixed;
   overflow: hidden;
   color: #FFF;
-  position: relative;
-  text-align: center;
 }
 
 
-.background-home {
-  background: #A2B0C1;
-  height:100%;
-  width: 40%;
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+  font-family: 'Share Tech';
+  margin-bottom: 60px;
   position: absolute;
-  top: 0;
-}
-
-.home-content {
-  position: absolute;
+  top: 40%;
   left: 50%;
-  top: 50%;
   transform: translate(-50%, -50%);
-  padding: 100px 0px;
 }
 
-.name-header {
-  text-transform: capitalize;
-  font-size: 5em;
-  position: relative;
-  display: inline-block;
-  font-family: 'Cedarville Cursive';
-  /* font-family: 'Share Tech', sans-serif; */
-  /* letter-spacing: 0.2em; */
-  margin-bottom: 40px;
-}
-
-
-.title-header {
-  font-size: 2em;
-  font-weight: 400;
-  font-size: 3em;
-  font-family: 'Share Tech', sans-serif;
-  margin-bottom: 80px;
-}
-
-.theme-2-color {
-  color: var(--theme-dark);
+.contact-btn-home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes scroll {

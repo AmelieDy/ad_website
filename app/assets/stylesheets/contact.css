@@ -26,14 +26,12 @@
   margin-top: 40px;
   border-bottom: 3px solid #525c6d;
   font-weight: 400;
-
 }
 
 .form-control::placeholder {
   color: #525c6d;
   font-size: 18px;
   font-weight: 400;
-
 }
 
 .form-control:focus {
@@ -44,12 +42,10 @@
   border-bottom: 3px solid #36435b;
   border-bottom: 3px solid var(--theme-dark);
   border-bottom: 3px solid #d5d5e5;
-
-
 }
+
 textarea:focus {
     box-shadow: none !important;
-
 }
 
 input:invalid {
@@ -77,7 +73,8 @@ label.error {
   font-family: 'Baloo 2';
   font-weight: 600;
   color: var(--theme-light);
-  margin-top: 10px;
+  position: absolute;
+  bottom: -20px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 992px) {

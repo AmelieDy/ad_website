@@ -1,49 +1,15 @@
 .btn-theme {
   background: var(--theme-light);
   color: #FFF;
-  /* text-transform: uppercase; */
   padding: 10px 26px;
   font-family: 'Share Tech';
   font-size: 20px;
   border-radius: 0px;
+  margin-top: 40px;
+  box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
 }
 
 .btn-theme:hover {
   background: var(--theme-dark);
   color: #FFF;
-}
-
-
-.btn.btn-link {
-    width: 30px;
-    height: 30px;
-    padding: 2px;
-    border-radius: 1px;
-    text-align: center;
-    border-color: #FFF;
-}
-
-.btn.btn-link:hover {
-  background: var(--theme-color);
-  color: #FFF;
-}
-
-.bottom-links {
-  margin-top: 100px;
-}
-
-.fa {
-  color: #FFF !important;
-  font-size: 14px !important;
-}
-
-.outline {
-  display: inline-block;
-  border: 1px solid #FFF;
-  padding: 6px;
-  color: #FFF;
-  border-radius: 2px;
-  font-weight: 600;
-  font-size: 14px;
-  cursor: pointer;
 }

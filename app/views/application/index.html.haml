@@ -8,33 +8,22 @@
           %span.navbar-toggler-icon
         #navbar.collapse.navbar-collapse
           %ul.navbar-nav.ml-auto
-            /
-              <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
             %li.nav-item.active
-              %a.nav-link{:href => "#services"}
-                Services
-
-
+              %a.nav-link{:href => "#services"} Services
             %li.nav-item
               %a.nav-link{:href => "#quality"} Charte qualité
-
             %li.nav-item
               %a.nav-link{:href => "#contact"} Contact
-    #home
-      -# = image_tag 'it-services-03.png', class: 'home-img'
-      .layer.layer-home
 
+    #home
+      .layer.layer-home
       .container
         .svg-container
-          %svg{:height => "100%", :style => "fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;", :version => "1.1", :viewbox => "0 0 247 390", :width => "40px", :xmlns => "http://www.w3.org/2000/svg", "xmlns:xlink" => "http://www.w3.org/1999/xlink"}
-            %path#wheel{:d => "M123.359,79.775l0,72.843", :style => "fill:none;stroke:#fff;stroke-width:20px;"}
-            %path#mouse{:d => "M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z", :style => "fill:none;stroke:#fff;stroke-width:20px;"}
+          = render 'svg_mouse.html.haml'
         .home-content
-          %h1.name-header Amélie Delory
-          %h2.title-header Création de sites et applications web
-          %span.btn.btn-theme.btn-circle.btn-lg.wow.fadeInDown{'data-wow-offset': 0 } Contactez-moi
+          %h1.ml3 Création de sites et applications web
+          %span.btn.btn-theme.contact-btn-home Contact
+
 
     #services
       .container
@@ -42,8 +31,6 @@
           .col-lg-12.center-sm
             %h5.title-sm.wow.fadeInDown Mes services
             %h3.title-lg Du sur mesure pour vos projets
-
-
         .row
           .col-lg-4
             .service-card.theme-dark-bg.text-white.center-sm
@@ -68,30 +55,25 @@
                   %p Traduction de maquettes graphiques en code, assemblant tous les &#xE9;lements de la mise en page du site web de fa&#xE7;on optimale.
 
     #website
-      .container
-        .row
-          .col-lg-4
-            = image_tag 'mouse.png', class: 'website-img'
-            -# .layer.layer-theme
-          .col-lg-8
+      .layer.layer-home
+      .row
+        .col-lg-6
+        .col-lg-6
+          .visible-card.darker-bg.text-white
 
-            .visible-card.darker-bg.text-white
+            %h5.title-sm.light.wow.fadeInDown Soyez visible
+            %h3.title-lg.light Un investissement sur le long terme
 
-              %h5.title-sm.light.wow.fadeInDown Soyez visible
-              %h3.title-lg.light Un investissement sur le long terme
-
-              %p
-                Aujourd'hui, presque 90% des français se fient sur le web avant d'acheter un service ou un produit.
-                %br
-                Votre site vitrine, c’est une porte de communication et de présentation pour vous, ce que vous faites et vos valeurs, disponible en tout temps et accessible de partout.
-                %br
-                Le simple fait d'exister sur le web augmente votre notoriété et renforce votre crédibilité.
-                %br
-
+            %p
+              Aujourd'hui, presque 90% des français se fient à leurs recherches sur le web avant d'acheter un service ou un produit.
               %br
-              %strong
-                %span.btn.btn-theme.wow.fadeInDown Parlez moi de votre projet
-
+              Votre site vitrine, c’est une porte de communication et de présentation pour vous, ce que vous faites et vos valeurs, disponible en tout temps et accessible de partout.
+              %br
+              Le simple fait d'exister sur le web augmente votre notoriété et renforce votre crédibilité.
+              %br
+            %br
+            %strong
+              %span.btn.btn-theme.wow.fadeInDown Parlez moi de votre projet
 
     #quality
       .container
@@ -162,17 +144,17 @@
                     = f.text_field  :firstname, required: true, placeholder: "Prénom", class: "form-control"
               .row
                 .col-md-12
-
                   .form-group.text-white
                     = f.email_field :email, required: true,placeholder: "Email" ,class: "form-control"
+              .row
+                .col-md-12
                   .form-group
                     = f.text_area :body,  required: true, placeholder: 'Message', class: "form-control"
+              .row
+                .col-md-12
 
                   %button.submit.right.btn.btn-theme.wow.fadeInDown
                     %span.initial-content Envoyer
                     %span.sending-content.hide
                       = image_tag 'three-dots.svg', class: 'loading-svg'
                     %span.sent-content.hide Envoyé !
-
-
-                    -# = f.submit 'Envoyer', class: 'submit btn btn-theme'

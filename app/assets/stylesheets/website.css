@@ -1,5 +1,15 @@
+#website {
+  background-image: url('minimal.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
+}
+
+
 .visible-card {
-  padding: 100px;
+  padding: 100px 160px;
 }
 
 .visible-card p {
