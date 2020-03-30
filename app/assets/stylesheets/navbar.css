@@ -6,7 +6,7 @@
 }
 
 .navbar-transparent {
-  background: transparent;
+  background: transparent !important;
   transition: 1s ease;
 }
 
@@ -16,29 +16,24 @@
   box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
 }
 
-.navbar-toggler-icon {
-  filter: invert(36%) sepia(15%) saturate(660%) hue-rotate(145deg) brightness(90%) contrast(87%) !important;
-}
 .navbar li>a {
   text-transform: uppercase;
   font-family: 'Baloo 2';
   font-weight: 300;
   letter-spacing: 0.2em;
 }
-
-.navbar-transparent li>a {
-  color: #FFF !important;
-}
-
-.navbar-light li>a {
+.navbar-light .nav-link {
   color: #6D788F !important;
 }
-
-.navbar a:hover {
-  font-weight: 600;
+.nav-link.active,
+.nav-link:hover  {
+  color: var(--theme-light) !important;
 }
 
-.navbar li {
+
+
+
+.nav-link {
   width: 200px;
   text-align: center;
 }

@@ -1,159 +1,159 @@
-#wrapper
-  / Page Content
-  #page-content-wrapper
-    %nav.navbar.navbar-expand-lg.navbar-transparent
-      .container
-        %a.navbar-brand.hvr-sweep-to-right{:href => "#home"} AD
-        %button.navbar-toggler{"aria-controls" => "navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
-          %span.navbar-toggler-icon
-            %i.fa.fa-navicon
-        #navbar.collapse.navbar-collapse
-          %ul.navbar-nav.ml-auto.right
-            %li.nav-item.active
-              %a.nav-link{:href => "#services"} Services
-            %li.nav-item
-              %a.nav-link{:href => "#quality"} Charte qualité
-            %li.nav-item
-              %a.nav-link{:href => "#contact"} Contact
 
-    #home
-      .layer.layer-home
-      .container
-        .svg-container
-          = render 'svg_mouse.html.haml'
-        .home-content
-          %h1.ml3
-            Création de sites et applications web
-          %a.btn.btn-theme.contact-btn-home.wow.fadeInDown{'data-wow-offset': 0, href: "#contact"} Me contacter
+%header
+  %nav.navbar.navbar-expand-lg.navbar-dark#navnav
+    .container
+      %a.navbar-brand.hvr-sweep-to-right{:href => "#home"} Amélie Delory
+      %button.navbar-toggler{"aria-controls" => "navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+        %span.navbar-toggler-icon
+      #navbar.collapse.navbar-collapse
+        %ul.navbar-nav.ml-auto.scrollspy-example
+          %li.nav-item
+            %a.nav-link{:href => "#services"} Services
+          %li.nav-item
+            %a.nav-link{:href => "#quality"} Charte qualité
+          %li.nav-item
+            %a.nav-link{:href => "#contact"} Contact
+%section
+  #home
+    .layer.layer-home
+    .container
+      .svg-container
+        = render 'svg_mouse.html.haml'
+      .home-content
+        %h1.ml3
+          Création de sites et applications web
+        %a.btn.btn-theme.contact-btn-home.wow.fadeInDown{'data-wow-offset': 0, href: "#contact"} Me contacter
 
-    #services
-      .container
-        .row
-          .col-lg-12.center-sm
-            %h5.title-sm.wow.fadeInDown Mes services
-            %h3.title-lg Du sur mesure pour vos projets
-        .row
-          .col-lg-4
-            .service-card.theme-dark-bg.text-white.center-sm.wow.bounceInLeft
-              .background-service
-                = image_tag "network.png", class: "service-icon icon-white"
-                .service-content
-                  %h5.service-item sites vitrine
-                  %p Soyez visible sur le web grâce à un site vitrine sur mesure, mettant en avant vos produits, services et valeurs.
-          .col-lg-4
-            .service-card.lighter-grey-bg.center-sm.wow.bounceInDown
-              .background-service
-                = image_tag "support.png", class: "service-icon icon-theme"
-                .service-content
-                  %h5.service-itemapplications Applications web
-                  %p Optimisez et automatisez vos tâches du quodidien à travers un développement spécifique à vos besoins.
-          .col-lg-4
-            .service-card.white-bg.center-sm.wow.bounceInRight
-              .background-service
-                = image_tag "layers.png", class: "service-icon icon-theme"
-                .service-content
-                  %h5.service-item intégration
-                  %p Traduction de maquettes graphiques en code, assemblant tous les &#xE9;lements de la mise en page du site web de fa&#xE7;on optimale.
-
-    #website
-      .layer.layer-home
+  #services
+    .container
       .row
-        .col-lg-6
-        .col-lg-6
-          .visible-card.darker-bg.text-white
+        .col-lg-12.center-sm
+          %h5.title-sm.wow.fadeInDown Mes services
+          %h3.title-lg Du sur mesure pour vos projets
+      .row
+        .col-lg-4.margin-card
+          .service-card.theme-dark-bg.text-white.center-sm.wow.bounceInLeft
+            .background-service
+              = image_tag "network.png", class: "service-icon icon-white"
+              .service-content
+                %h5.service-item sites vitrine
+                %p Soyez visible sur le web grâce à un site vitrine sur mesure, mettant en avant vos produits, services et valeurs.
+        .col-lg-4.margin-card
+          .service-card.lighter-grey-bg.center-sm.wow.bounceInDown
+            .background-service
+              = image_tag "support.png", class: "service-icon icon-theme"
+              .service-content
+                %h5.service-itemapplications Applications web
+                %p Optimisez et automatisez vos tâches du quodidien à travers un développement spécifique à vos besoins.
+        .col-lg-4.margin-card
+          .service-card.white-bg.center-sm.wow.bounceInRight
+            .background-service
+              = image_tag "layers.png", class: "service-icon icon-theme"
+              .service-content
+                %h5.service-item intégration
+                %p Traduction de maquettes graphiques en code, assemblant tous les &#xE9;lements de la mise en page du site web de fa&#xE7;on optimale.
 
-            %h5.title-sm.light.wow.fadeInDown Soyez visible
-            %h3.title-lg.light Un investissement sur le long terme
-            %p
-              Aujourd'hui, presque 90% des français se fient à leurs recherches sur le web avant d'acheter un service ou un produit.
-              %br
-              Votre site vitrine, c’est une porte de communication et de présentation pour vous, ce que vous faites et vos valeurs, disponible en tout temps et accessible de partout.
-              %br
-              Le simple fait d'exister sur le web augmente votre notoriété et renforce votre crédibilité.
-              %br
+  #website
+    .layer.layer-home
+    -# .container
+
+    .row
+      .col-lg-6.website-img
+      .col-lg-6
+        .visible-card.darker-bg.text-white
+
+          %h5.title-sm.light.wow.fadeInDown Soyez visible
+          %h3.title-lg.light Un investissement sur le long terme
+          %p
+            Aujourd'hui, presque 90% des français se fient à leurs recherches sur le web avant d'acheter un service ou un produit.
             %br
-            %strong
-              %a.btn.btn-theme.wow.fadeInDown{href: "#contact"} Parlez moi de votre projet
+            Votre site vitrine, c’est une porte de communication et de présentation pour vous, ce que vous faites et vos valeurs, disponible en tout temps et accessible de partout.
+            %br
+            Le simple fait d'exister sur le web augmente votre notoriété et renforce votre crédibilité.
+            %br
+          %br
+          %strong
+            %a.btn.btn-theme.wow.fadeInDown{href: "#contact"} Parlez moi de votre projet
 
-    #quality
-      .container
-        .row
-          .col-lg-12.text-center
-            %h5.title-sm.wow.fadeInDown plus
-            %h3.title-lg Ma charte qualité
-        .row
-          .col-lg-4
-            .quality-card.theme-dark-bg.text-white.wow.flipInX
-              = image_tag "detail.png", class: 'quality-icon icon-white'
-              %h5.title
-                Sens du détail
-              %p.text
-                Chaque détail compte : le choix des couleurs, le style des ic&#xF4;nes et des boutons, la typographie ainsi que les illustrations.
-          .col-lg-4
-            .quality-card.lighter-grey-bg.wow.flipInY
-              = image_tag "uniq.png", class: 'quality-icon icon-theme'
-              %h5.title
-                Design unique
-              %p.text
-                Création d'un univers graphique unique permettant de refléter au mieux votre identité et vos valeurs.
-          .col-lg-4
-            .quality-card.white-bg.wow.flipInX
-              = image_tag "layers.png", class: 'quality-icon icon-theme'
-              %h5.title
-                Interfaces intuitives
-              %p.text
-                Expérience utilisateur agréable et fluide à travers des fonctionnalités simples et intelligibles.
-        .row.margin-sm
-          .col-lg-4
-            .quality-card.white-bg.wow.flipInY
-              = image_tag "responsive.png", class: 'quality-icon icon-theme'
-              %h5.title
-                Responsive design
-              %p.text
-                Navigation optimales grace à son design responsive qui ajuste automatiquement les dimensions de la page au support numérique utilisé.
-          .col-lg-4
-            .quality-card.darker-bg.text-white.wow.flipInX
-              = image_tag "evolution.png", class: 'quality-icon icon-white'
-              %h5.title
-                Développement évolutif
-              %p.text
-                L'architecture de développement est pensé de sorte à pouvoir ajouter, modifier ou désactiver des fonctionnalités.
-          .col-lg-4
-            .quality-card.theme-light-bg.text-white.wow.flipInY
-              = image_tag "maintenance.png", class: 'quality-icon icon-white'
-              %h5.title
-                Produits maintenables
-              %p.text
-                Simplification de la maintenance et des mises à jours, rigueur dans le respect des normes de codage.
+  #quality
+    .container
+      .row
+        .col-lg-12.text-center
+          %h5.title-sm.wow.fadeInDown plus
+          %h3.title-lg Ma charte qualité
+      .row
+        .col-lg-4.margin-card
+          .quality-card.theme-dark-bg.text-white.wow.flipInX
+            = image_tag "detail.png", class: 'quality-icon icon-white'
+            %h5.title
+              Sens du détail
+            %p.text
+              Chaque détail compte : le choix des couleurs, le style des ic&#xF4;nes et des boutons, la typographie ainsi que les illustrations.
+        .col-lg-4.margin-card
+          .quality-card.lighter-grey-bg.wow.flipInY
+            = image_tag "uniq.png", class: 'quality-icon icon-theme'
+            %h5.title
+              Design unique
+            %p.text
+              Création d'un univers graphique unique permettant de refléter au mieux votre identité et vos valeurs.
+        .col-lg-4.margin-card
+          .quality-card.white-bg.wow.flipInX
+            = image_tag "layers.png", class: 'quality-icon icon-theme'
+            %h5.title
+              Interfaces intuitives
+            %p.text
+              Expérience utilisateur agréable et fluide à travers des fonctionnalités simples et intelligibles.
+      .row.margin-sm
+        .col-lg-4.margin-card
+          .quality-card.white-bg.wow.flipInY
+            = image_tag "responsive.png", class: 'quality-icon icon-theme'
+            %h5.title
+              Responsive design
+            %p.text
+              Navigation optimales grace à son design responsive qui ajuste automatiquement les dimensions de la page au support numérique utilisé.
+        .col-lg-4.margin-card
+          .quality-card.darker-bg.text-white.wow.flipInX
+            = image_tag "evolution.png", class: 'quality-icon icon-white'
+            %h5.title
+              Développement évolutif
+            %p.text
+              L'architecture de développement est pensé de sorte à pouvoir ajouter, modifier ou désactiver des fonctionnalités.
+        .col-lg-4.margin-card
+          .quality-card.theme-light-bg.text-white.wow.flipInY
+            = image_tag "maintenance.png", class: 'quality-icon icon-white'
+            %h5.title
+              Produits maintenables
+            %p.text
+              Simplification de la maintenance et des mises à jours, rigueur dans le respect des normes de codage.
 
-      #contact
-        .row
-          .col-lg-6.image-contact
-            .layer.layer-home
-          .col-lg-6.contact-form.darker-bg.text-white
-            %h5.title-sm.light.wow.fadeInDown Contact
-            %h3.title-lg.light Discutons de votre projet !
-            = form_for @message, remote: true, id: 'contact-form', url: messages_path do |f|
-              .row
-                .col-md-6
-                  .form-group
-                    .error
-                    = f.text_field  :name, required: true, placeholder: "Nom", class: "form-control"
-                .col-md-6
-                  .form-group
-                    = f.text_field  :firstname, required: true, placeholder: "Prénom", class: "form-control"
-              .row
-                .col-md-12
-                  .form-group.text-white
-                    = f.email_field :email, required: true,placeholder: "Email" ,class: "form-control"
-              .row
-                .col-md-12
-                  .form-group
-                    = f.text_area :body,  required: true, placeholder: 'Message', class: "form-control"
-              .row
-                .col-md-12
-                  %button.submit.btn.btn-theme.wow.fadeInDown{'data-wow-offset': 0}
-                    %span.initial-content Envoyer
-                    %span.sending-content.hide
-                      = image_tag 'three-dots.svg', class: 'loading-svg'
-                    %span.sent-content.hide Envoyé !
+    #contact
+      .row
+        .col-lg-6.image-contact
+          .layer.layer-home
+        .col-lg-6.contact-form.darker-bg.text-white
+          %h5.title-sm.light.wow.fadeInDown Contact
+          %h3.title-lg.light Discutons de votre projet !
+          = form_for @message, remote: true, id: 'contact-form', url: messages_path do |f|
+            .row
+              .col-md-6
+                .form-group
+                  .error
+                  = f.text_field  :name, required: true, placeholder: "Nom", class: "form-control"
+              .col-md-6
+                .form-group
+                  = f.text_field  :firstname, required: true, placeholder: "Prénom", class: "form-control"
+            .row
+              .col-md-12
+                .form-group.text-white
+                  = f.email_field :email, required: true,placeholder: "Email" ,class: "form-control"
+            .row
+              .col-md-12
+                .form-group
+                  = f.text_area :body,  required: true, placeholder: 'Message', class: "form-control"
+            .row
+              .col-md-12
+                %button.submit.btn.btn-theme.wow.fadeInDown{'data-wow-offset': 0}
+                  %span.initial-content Envoyer
+                  %span.sending-content.hide
+                    = image_tag 'three-dots.svg', class: 'loading-svg'
+                  %span.sent-content.hide Envoyé !

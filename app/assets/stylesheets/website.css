@@ -7,18 +7,10 @@
   position: relative;
 }
 
-
 .visible-card {
-  padding: 100px 160px;
+  padding: 80px 60px;
 }
 
 .visible-card p {
   color: #e5e5e5;
-}
-
-.website-img {
-  position: absolute;
-  width: 100%;
-  transform: rotate(90deg);
-  right: -20px;
 }

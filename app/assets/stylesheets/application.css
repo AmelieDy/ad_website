@@ -82,108 +82,83 @@ body {
   overflow-x: hidden;
   margin: 0 auto;
   background: var(--light-grey) !important;
-  /* background: #FFF !important; */
   font-family: 'Open Sans', sans-serif !important;
+  /* position: relative; */
 }
 
 p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.9em;
   font-weight: 100;
   font-family: 'Baloo 2';
 }
 
-.about-title {
-  position: relative;
+@media screen and (min-width: 0px) and (max-width: 992px) {
+  svg {
+    width: 20px;
+  }
+
+  .ml3 {
+    font-size: 1.9em;
+  }
+  .btn-theme {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .center-sm {
+    text-align: center;
+  }
+
+  .visible-card {
+    padding: 80px 40px !important;
+  }
+  .website-img {
+    height: 400px;
+  }
+
+  .service-card,
+  .quality-card {
+    padding: 60px !important;
+  }
+
+  .contact-form {
+    padding: 80px 80px;
+  }
+
+  .margin-sm {
+    margin-top: 0 !important;
+  }
+
+  #contact {
+    margin-top: 60px;
+  }
+
+  #services {
+    margin-top: 100px !important;
+  }
+
+  .nav-link {
+    width: 100% !important;
+    display: block;
+    text-align: right !important;
+  }
+
+  .navbar-nav {
+    padding: 0 !important;
+    text-align: right !important;
+  }
+
+  .navbar-dark {
+    background: rgba(49,48,70,0.98);
+    background: #141F33;
+  }
 }
 
-.about-title:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 100%;
-  right: 0;
-  border-top: 150px solid transparent;
-  border-right: 3000px solid transparent;
-}
 
-.theme-color {
-  color: var(--framboise);
-}
-
-.theme-dark {
-  color: var(--theme-dark);
-}
-
-.light-grey {
-  color: var(--light-grey);
-}
-
-.list-group a {
-  background-color: transparent !important;
-  color: #e8ae99;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.list-group a:hover {
-  color: #FFF;
-}
-
-.list-group-item {
-  text-decoration: none !important;
-  border: 0px !important;
-}
-
-.margin-sm {
-  margin-top: 30px;
-}
-
-
-#page-content-wrapper {
-  min-width: 100vw;
-  margin-left: 0;
-  -webkit-transition: margin .25s ease-out;
-  -moz-transition: margin .25s ease-out;
-  -o-transition: margin .25s ease-out;
-  transition: margin .25s ease-out;
-}
-
-
-.text-bold {
-  font-weight: 900;
-}
-
-
-.slides {
-  font-family: 'Josefin Sans' !important;
-  font-size: 34px !important;
-}
-
-section::before,
-section::after {
-  position: absolute;
-  content: '';
-  pointer-events: none;
-}
-
-.nectar-shape-divider-wrap {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 350px;
-}
-
-.nectar-shape-divider {
-  fill: var(--light-grey);
-  position: absolute;
-  bottom: -40px;
-}
-
-.hidden {
-  display: none;
-}
-
-.text-lg {
-  font-size: 90px;
+@media screen and (min-width: 1200px)  {
+  .visible-card,
+  .contact-form {
+    padding: 150px !important;
+  }
 }
