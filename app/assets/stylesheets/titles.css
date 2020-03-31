@@ -1,16 +1,4 @@
-
-/* h2:before {
-  content: '';
-  height: 2px;
-  width: 10%;
-  position: absolute;
-  bottom: 0;
-} */
-
-h1 {
-  font-weight: 900 !important;
-}
-
+/* all titles of application settings */
 .title-lg {
   z-index: 0.1em;
   z-index: -1;
@@ -31,7 +19,6 @@ h1 {
 .dark {
   color: #0C2742;
 }
-
 
 .title-sm {
   color: var(--theme-dark);

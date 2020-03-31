@@ -1,3 +1,4 @@
+/* home settings, image on backgroung */
 #home {
   height: 100vh;
   background-image: url('home.jpg');
@@ -9,7 +10,7 @@
   text-align:center;
 }
 
-
+/* description */
 .ml3 {
   font-weight: 900;
   font-size: 3.5em;
@@ -22,6 +23,7 @@
   width: 80%;
 }
 
+/* button contact position */
 .contact-btn-home {
   position: absolute;
   top: 60%;
@@ -29,6 +31,7 @@
   transform: translate(-50%, -50%) !important;
 }
 
+/* svg mouse keyframes */
 @keyframes scroll {
 	0% {
 		transform: translateY(0);

@@ -1,7 +1,10 @@
+/* bootstrap  */
 @import "bootstrap";
 
-@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Baloo+2|Share+Tech|Raleway:100,300,700,900|Montserrat|Sen|Solway&display=swap');
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Baloo+2|Share+Tech&display=swap');
 
+/* import needed stylesheets */
 @import 'about.css' screen;
 @import 'animate.css' screen;
 @import 'buttons.css' screen;
@@ -10,13 +13,12 @@
 @import 'quality.css' screen;
 @import 'navbar.css' screen;
 @import 'titles.css' screen;
-@import 'triangles.css' screen;
-@import 'timeline.css' screen;
 @import 'services.css' screen;
 @import 'sidebar.css' screen;
 @import 'skills.css' screen;
 @import 'website.css' screen;
 
+/* set root variables */
 :root {
   --light-grey: #F8F8F8;
   --theme-dark: #F47A55;
@@ -24,49 +26,32 @@
   --linear-bg: linear-gradient(220deg,rgba(53,80,160,0.27) 0%,#141F33 100%);
 }
 
+/* set background classes to add on html elements */
+
 .lighter-grey-bg {
   background: #e5e5e5;
 }
 .darker-bg {
   background: #141F33;
 }
-
 .dark-bg {
  background: #003D4E;
 }
-
-.medium-bg {
-  background: #006269;
-}
-
 .theme-dark-bg {
   background: var(--theme-dark);
 }
-
 .theme-light-bg {
   background: var(--theme-light);
 }
-
-.theme-bg {
-  background: rgba(28,62,255,0.92);
-}
-
 .white-bg {
   background: #FFF;
 }
-
-.right {
-  float: right;
-}
-
 .icon-theme {
   filter: invert(36%) sepia(15%) saturate(660%) hue-rotate(145deg) brightness(90%) contrast(87%);
 }
-
 .icon-white {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(107%) contrast(104%);
 }
-
 .layer {
   position: absolute;
   width: 100%;
@@ -74,9 +59,7 @@
   background: var(--linear-bg);
 }
 
-a:active {
-  border: 0;
-}
+/* body settings */
 
 body {
   overflow-x: hidden;
@@ -93,7 +76,16 @@ p {
   font-family: 'Baloo 2';
 }
 
+.titles-margin {
+  margin-bottom: 40px;
+}
+
+/* media queries */
+
 @media screen and (min-width: 0px) and (max-width: 992px) {
+  .image-contact {
+    height: 400px;
+  }
   svg {
     width: 20px;
   }

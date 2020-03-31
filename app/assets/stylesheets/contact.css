@@ -1,15 +1,9 @@
+/* section contact */
 #contact {
   margin-top: 160px;
 }
 
-.image-contact {
-  position: relative;
-  background: url("minimal3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* background: var(--theme-dark); */
-}
-
+/* contact form settings, with inputs and textarea, valid, invalid and errors */
 .contact-form {
   padding: 80px 60px;
 }
@@ -59,15 +53,6 @@ input:valid, textarea:valid {
   border-bottom: 3px solid #47d8b3; */
 }
 
-.loading-svg {
-  width: 50px;
-}
-
-.submit {
-  width: 180px;
-  margin-top: 40px;
-}
-
 label.error {
   font-size: 16px;
   font-family: 'Baloo 2';
@@ -77,8 +62,19 @@ label.error {
   bottom: -20px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 992px) {
-  .image-contact {
-    height: 400px;
-  }
+/* image, submit, and svg settings */
+.image-contact {
+  position: relative;
+  background: url("minimal3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.loading-svg {
+  width: 50px;
+}
+
+.submit {
+  width: 180px;
+  margin-top: 40px;
 }

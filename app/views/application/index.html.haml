@@ -15,7 +15,7 @@
             %a.nav-link{:href => "#contact"} Contact
 %section
   #home
-    .layer.layer-home
+    .layer
     .container
       .svg-container
         = render 'svg_mouse.html.haml'
@@ -27,7 +27,7 @@
   #services
     .container
       .row
-        .col-lg-12.center-sm
+        .col-lg-12.center-sm.text-center.titles-margin
           %h5.title-sm.wow.fadeInDown Mes services
           %h3.title-lg Du sur mesure pour vos projets
       .row
@@ -54,9 +54,7 @@
                 %p Traduction de maquettes graphiques en code, assemblant tous les &#xE9;lements de la mise en page du site web de fa&#xE7;on optimale.
 
   #website
-    .layer.layer-home
-    -# .container
-
+    .layer
     .row
       .col-lg-6.website-img
       .col-lg-6
@@ -78,7 +76,7 @@
   #quality
     .container
       .row
-        .col-lg-12.text-center
+        .col-lg-12.text-center.titles-margin
           %h5.title-sm.wow.fadeInDown plus
           %h3.title-lg Ma charte qualité
       .row
@@ -120,7 +118,7 @@
               L'architecture de développement est pensé de sorte à pouvoir ajouter, modifier ou désactiver des fonctionnalités.
         .col-lg-4.margin-card
           .quality-card.theme-light-bg.text-white.wow.flipInY
-            = image_tag "maintenance.png", class: 'quality-icon icon-white'
+            = image_tag "support.png", class: 'quality-icon icon-white'
             %h5.title
               Produits maintenables
             %p.text
@@ -129,31 +127,32 @@
     #contact
       .row
         .col-lg-6.image-contact
-          .layer.layer-home
-        .col-lg-6.contact-form.darker-bg.text-white
-          %h5.title-sm.light.wow.fadeInDown Contact
-          %h3.title-lg.light Discutons de votre projet !
-          = form_for @message, remote: true, id: 'contact-form', url: messages_path do |f|
-            .row
-              .col-md-6
-                .form-group
-                  .error
-                  = f.text_field  :name, required: true, placeholder: "Nom", class: "form-control"
-              .col-md-6
-                .form-group
-                  = f.text_field  :firstname, required: true, placeholder: "Prénom", class: "form-control"
-            .row
-              .col-md-12
-                .form-group.text-white
-                  = f.email_field :email, required: true,placeholder: "Email" ,class: "form-control"
-            .row
-              .col-md-12
-                .form-group
-                  = f.text_area :body,  required: true, placeholder: 'Message', class: "form-control"
-            .row
-              .col-md-12
-                %button.submit.btn.btn-theme.wow.fadeInDown{'data-wow-offset': 0}
-                  %span.initial-content Envoyer
-                  %span.sending-content.hide
-                    = image_tag 'three-dots.svg', class: 'loading-svg'
-                  %span.sent-content.hide Envoyé !
+          .layer
+        .col-lg-6.darker-bg.text-white
+          .contact-form
+            %h5.title-sm.light.wow.fadeInDown Contact
+            %h3.title-lg.light Discutons de votre projet !
+            = form_for @message, remote: true, id: 'contact-form', url: messages_path do |f|
+              .row
+                .col-md-6
+                  .form-group
+                    .error
+                    = f.text_field  :name, required: true, placeholder: "Nom", class: "form-control"
+                .col-md-6
+                  .form-group
+                    = f.text_field  :firstname, required: true, placeholder: "Prénom", class: "form-control"
+              .row
+                .col-md-12
+                  .form-group.text-white
+                    = f.email_field :email, required: true,placeholder: "Email" ,class: "form-control"
+              .row
+                .col-md-12
+                  .form-group
+                    = f.text_area :body,  required: true, placeholder: 'Message', class: "form-control"
+              .row
+                .col-md-12
+                  %button.submit.btn.btn-theme.wow.fadeInDown{'data-wow-offset': 0}
+                    %span.initial-content Envoyer
+                    %span.sending-content.hide
+                      = image_tag 'three-dots.svg', class: 'loading-svg'
+                    %span.sent-content.hide Merci !

@@ -1,3 +1,4 @@
+/* services settings */
 #services {
   margin-top: 160px;
   padding-bottom: 160px;
@@ -5,10 +6,11 @@
 }
 
 .service-card {
-  padding: 40px;
-  box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
+  position: relative;
+  text-align: center;
+  padding: 46px;
   height: 100%;
-  color: #486066;
+  box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
 }
 
 .margin-card {
@@ -16,8 +18,8 @@
 }
 
 .service-icon {
-  width: 42px;
-  margin-bottom: 24px;
+  width: 56px;
+  margin-bottom: 26px;
 }
 
 .service-card h5 {

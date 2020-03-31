@@ -69,5 +69,4 @@ $(document).ready(function() {
   $('.contact-btn-home').hide();
   $('.contact-btn-home').delay(2200).show(0);
 
-  // $('#srollspy-content').scrollspy();​
 });

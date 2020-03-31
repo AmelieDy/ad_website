@@ -6,6 +6,6 @@ class MessageMailer < ApplicationMailer
 
   def submission(message)
     @message = message
-    mail(to: CONTACT_EMAIL, subject: 'New contact page submission')
+    mail(to: CONTACT_EMAIL, subject: 'Nouveau message site web')
   end
 end
