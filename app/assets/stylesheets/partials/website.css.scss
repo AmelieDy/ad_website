@@ -1,0 +1,17 @@
+/* website settings */
+#website {
+  background-image: image-url('minimal-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
+}
+
+.visible-card {
+  padding: 80px 60px;
+}
+
+.visible-card p {
+  color: #e5e5e5;
+}

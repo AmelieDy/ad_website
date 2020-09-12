@@ -1,5 +1,8 @@
-/* set dark and light navbar styles, change when scroll */
+// Place all the styles related to the Resume controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
 
+/* set dark and light navbar styles, change when scroll */
 .navbar {
   position: fixed !important;
   width: 100%;
@@ -40,11 +43,12 @@
 /* set navbar brand style */
 
 .navbar-brand {
-  font-family: 'Cedarville Cursive' !important;
+  font-family: 'Baloo 2' !important;
   letter-spacing: -2px;
   border-radius: 50%;
   font-size: 30px !important;
   color: var(--theme-light);
+  width: 300px;
 }
 
 .navbar-brand:hover {
@@ -53,4 +57,9 @@
 
 .navbar-light .navbar-brand {
   color: var(--theme-light);
+}
+
+.navbar-logo {
+  width: 50px;
+  margin-right: 10px;
 }

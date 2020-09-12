@@ -1,0 +1,17 @@
+%header
+  %nav.navbar.navbar-expand-lg.navbar-dark#navnav
+    .container
+      %a.navbar-brand.hvr-sweep-to-right{:href => "#home"}
+        = image_tag 'mountain.png', class: 'navbar-logo icon-white'
+        Amélie Delory
+      %button.navbar-toggler{"aria-controls" => "navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+        %span.navbar-toggler-icon
+      #navbar.collapse.navbar-collapse
+        %ul.navbar-nav.ml-auto.scrollspy-example
+          %li.nav-item
+            %a.nav-link{:href => "#services"} Compétences
+          %li.nav-item
+            %a.nav-link{:href => "#quality"} About
+          %li.nav-item
+            %a.nav-link{:href => "#contact"} Contact
+            %a.btn.btn-theme.contact-btn-home.wow.fadeInDown{'data-wow-offset': 0, href: "#contact"} Me contacter

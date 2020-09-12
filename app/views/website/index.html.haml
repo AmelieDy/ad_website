@@ -1,8 +1,9 @@
-
 %header
   %nav.navbar.navbar-expand-lg.navbar-dark#navnav
     .container
-      %a.navbar-brand.hvr-sweep-to-right{:href => "#home"} Amélie Delory
+      %a.navbar-brand.hvr-sweep-to-right{:href => "#home"}
+        = image_tag 'mountain.png', class: 'navbar-logo icon-white'
+        Matuvu
       %button.navbar-toggler{"aria-controls" => "navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
         %span.navbar-toggler-icon
       #navbar.collapse.navbar-collapse
@@ -16,13 +17,32 @@
 %section
   #home
     .layer
-    .container
       .svg-container
         = render 'svg_mouse.html.haml'
-      .home-content
-        %h1.ml3
-          Création de sites et applications web
-        %a.btn.btn-theme.contact-btn-home.wow.fadeInDown{'data-wow-offset': 0, href: "#contact"} Me contacter
+    .container
+      .row
+        .col-lg-8
+          .home-content
+            %h1.ml
+              VOUS VOULEZ
+              %span.caroussel
+                %span UN SITE WEB
+                %span ÊTRE VISIBLE
+                %span DU SUR MESURE
+
+      .row
+        .col-lg-4
+          -# %a.btn.btn-theme.contact-btn-home.wow.fadeInDown{'data-wow-offset': 0, href: "#contact"} Me contacter
+          %p
+            Matuvu vous accompagne dans la création ou la refonte de votre site web adapaté à votre métier.
+            Vous voulez une solution intuitive, évolutive et maintenable, je suis à votre écoute pour réaliser votre projet :)
+
+
+
+      .row
+        .col-lg-8
+          %a.btn.btn-theme.wow.fadeInLeft{'data-wow-offset': 0} Me contacter
+          %a.btn.btn-theme-outline.wow.fadeInRight{'data-wow-offset': 0} Télécharger mon CV
 
   #services
     .container
