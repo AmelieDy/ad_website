@@ -1,9 +1,8 @@
 %header
   %nav.navbar.navbar-expand-lg.navbar-dark#navnav
     .container
-      %a.navbar-brand.hvr-sweep-to-right{:href => "#home"}
-        = image_tag 'mountain.png', class: 'navbar-logo icon-white'
-        Amélie Delory
+      %a.navbar-brand.hvr-sweep-to-right.brand-resume{:href => "#home"}
+        A D
       %button.navbar-toggler{"aria-controls" => "navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
         %span.navbar-toggler-icon
       #navbar.collapse.navbar-collapse
@@ -11,7 +10,61 @@
           %li.nav-item
             %a.nav-link{:href => "#services"} Compétences
           %li.nav-item
-            %a.nav-link{:href => "#quality"} About
+            %a.nav-link{:href => "#quality"} Expérience
+          %li.nav-item
+            %a.nav-link{:href => "#quality"} Formation
           %li.nav-item
             %a.nav-link{:href => "#contact"} Contact
-            %a.btn.btn-theme.contact-btn-home.wow.fadeInDown{'data-wow-offset': 0, href: "#contact"} Me contacter
+%section
+  #home
+    .layer
+      .svg-container
+        = render 'svg_mouse.html.haml'
+    .container
+      .row
+        .col-lg-7
+          .presentation
+            .row
+              .col-lg-12
+                .home-content
+                  %h1.ml
+                    DÉVELOPPEUSE
+                    %span.caroussel
+                      %span RUBY ON RAILS
+                      %span ANGULAR
+                      %span FULL STACK
+
+            .row
+              .col-lg-8
+                -# %a.btn.btn-theme.contact-btn-home.wow.fadeInDown{'data-wow-offset': 0, href: "#contact"} Me contacter
+                %p
+                  Matuvu vous accompagne dans la création ou la refonte de votre site web adapaté à votre métier.
+                  Vous voulez une solution intuitive, évolutive et maintenable, je suis à votre écoute pour réaliser votre projet :)
+
+            .row
+              .col-lg-12
+                %a.btn.btn-theme.wow.fadeInLeft{'data-wow-offset': 0} Me contacter
+                %a.btn.btn-theme-outline.wow.fadeInRight{'data-wow-offset': 0} Télécharger mon CV
+      -#   .col-lg-5
+      -#     .box
+      -#     = image_tag 'img_cv.jpg', class: 'me'
+
+  -# #about
+  -#   -# .line
+  -#   -# .box-left
+  -#   .container
+  -#     .row
+  -#       .col-lg-5
+  -#         -# .box{"data-rellax-speed" => "1"}
+  -#         = image_tag 'img_cv.jpg', class: 'me'
+  -#       .col-lg-7
+  -#         %p
+  -#           Le Web nous offre aujourd'hui un espace de libert&#xE9; cr&#xE9;atif et d'expression.
+  -#           C'est avant tout ce qui me passionne dans cet univers o&#xF9; nous sommes au coeur du Language,
+  -#           mati&#xE8;re premi&#xE8;re qui donne vie &#xE0; nos id&#xE9;es et nos projets, qu'ils soient simples ou compl&#xE8;tement d&#xE9;lirants...
+  -#           %br
+  -#             Son &#xE9;volution constante anime mon envie d'apprendre, de cr&#xE9;er, d'am&#xE9;liorer, d'optimiser les techniques de d&#xE9;veloppement et de design, afin de concr&#xE9;tiser ces projets de la fa&#xE7;on la plus adapt&#xE9;e possible.
+  -#           %span.btn-theme En savoir plus
+  = render 'about'
+  = render 'skills'
+  = render 'experience'

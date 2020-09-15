@@ -1,3 +1,6 @@
-body {
-  background: pink !important;
-}
+@import 'partials/about.css' screen;
+@import 'partials/experience.css' screen;
+@import 'partials/tools.css' screen;
+@import 'partials/skills.css' screen;
+@import 'partials/titles-resume.css' screen;
+@import 'partials/navbar-resume.css' screen;

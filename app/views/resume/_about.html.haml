@@ -1,0 +1,76 @@
+#about
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2.title-lg About me
+    .row
+      .col-lg-12
+        .card-about
+          .row
+            .col-lg-5
+              .box-left
+              = image_tag 'img_cv_big.jpg', class: 'me'
+
+            .col-lg-7
+              .row
+                .col-12
+                  #about-tab.nav.nav-pills{ :role => "tablist"}
+                    %a#infos-tab.btn-about.active{"data-toggle" => "pill", :href => "#page1", :role => "tab"}
+                      = image_tag "user.png", class:'about-logo'
+                      Infos
+
+                    %a#vision-tab.btn-about{"data-toggle" => "pill", :href => "#page2", :role => "tab"}
+                      = image_tag "eye.png", class:'about-logo'
+                      Vision
+                    %a#contact-tab.btn-about{"data-toggle" => "pill", :href => "#page3", :role => "tab"}
+                      = image_tag "paperplane.png", class:'about-logo'
+                      Contact
+              .row
+                .col-md-12
+                  #about-tabContent.tab-content
+                    #page1.tab-pane.fade.show.active{"aria-labelledby" => "infos-tab", :role => "tabpanel"}
+                      %h5 Vision
+                      %p
+                        Le Web nous offre aujourd'hui un espace de libert&#xE9; cr&#xE9;atif et d'expression.
+                        C'est avant tout ce qui me passionne dans cet univers o&#xF9; nous sommes au coeur du Language,
+                        mati&#xE8;re premi&#xE8;re qui donne vie &#xE0; nos id&#xE9;es et nos projets, qu'ils soient simples ou compl&#xE8;tement d&#xE9;lirants...
+                        %br
+                        Son &#xE9;volution constante anime mon envie d'apprendre, de cr&#xE9;er, d'am&#xE9;liorer, d'optimiser les techniques de d&#xE9;veloppement et de design, afin de concr&#xE9;tiser ces projets de la fa&#xE7;on la plus adapt&#xE9;e possible.
+                    #page2.tab-pane.fade{"aria-labelledby" => "vision-tab", :role => "tabpanel"}
+                      %h5 Vision
+                      %p
+                        Le Web nous offre aujourd'hui un espace de libert&#xE9; cr&#xE9;atif et d'expression.
+                        C'est avant tout ce qui me passionne dans cet univers o&#xF9; nous sommes au coeur du Language,
+                        mati&#xE8;re premi&#xE8;re qui donne vie &#xE0; nos id&#xE9;es et nos projets, qu'ils soient simples ou compl&#xE8;tement d&#xE9;lirants...
+                        Son &#xE9;volution constante anime mon envie d'apprendre, de cr&#xE9;er, d'am&#xE9;liorer, d'optimiser les techniques de d&#xE9;veloppement et de design, afin de concr&#xE9;tiser ces projets de la fa&#xE7;on la plus adapt&#xE9;e possible.
+                    #page3.tab-pane.fade{"aria-labelledby" => "contact-tab", :role => "tabpanel"}
+
+
+
+              -#
+              -# %a.btn.btn-about.wow.fadeInLeft{'data-wow-offset': 0} Vision
+              -# %a.btn.btn-about.wow.fadeInLeft{'data-wow-offset': 0} Coordonnées
+              -#
+              -# %a.btn.btn-theme.wow.fadeInLeft{'data-wow-offset': 0} Me contacter
+              -# %ul#myTab.nav.nav-tabs{:role => "tablist"}
+              -#   %li.nav-item
+              -#     %a#infos-tab.nav-link.active{"aria-controls" => "home", "aria-selected" => "true", "data-toggle" => "tab", :href => "#home", :role => "tab"} Coordonnées
+              -#   %li.nav-item
+              -#     %a#vision-tab.nav-link{"aria-controls" => "profile", "aria-selected" => "false", "data-toggle" => "tab", :href => "#profile", :role => "tab"} Vision
+              -#   %li.nav-item
+              -#     %a#contact-tab.nav-link{"aria-controls" => "contact-form", "aria-selected" => "false", "data-toggle" => "tab", :href => "#contact-form", :role => "tab"} Contact
+              -# #myTabContent.tab-content
+              -#   #infos.tab-pane.fade.show.active{"aria-labelledby" => "home-tab", :role => "tabpanel"}
+              -#     %h4 Coordonnées
+              -#
+              -#   #vision.tab-pane.fade{"aria-labelledby" => "profile-tab", :role => "tabpanel"}
+              -#     %h4 Vision
+              -#
+              -#
+              -#     %p
+              -#       Le Web nous offre aujourd'hui un espace de libert&#xE9; cr&#xE9;atif et d'expression.
+              -#       C'est avant tout ce qui me passionne dans cet univers o&#xF9; nous sommes au coeur du Language,
+              -#       mati&#xE8;re premi&#xE8;re qui donne vie &#xE0; nos id&#xE9;es et nos projets, qu'ils soient simples ou compl&#xE8;tement d&#xE9;lirants...
+              -#       Son &#xE9;volution constante anime mon envie d'apprendre, de cr&#xE9;er, d'am&#xE9;liorer, d'optimiser les techniques de d&#xE9;veloppement et de design, afin de concr&#xE9;tiser ces projets de la fa&#xE7;on la plus adapt&#xE9;e possible.
+              -#
+              -#   #contact-form.tab-pane.fade{"aria-labelledby" => "contact-tab", :role => "tabpanel"} ...

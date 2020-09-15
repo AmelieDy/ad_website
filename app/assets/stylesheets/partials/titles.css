@@ -5,12 +5,12 @@
   /* letter-spacing: -2px; */
   /* text-transform: uppercase; */
   display:inline-block;
-  font-weight: 300 !important;
+  font-weight: 500 !important;
   margin-bottom: 50px;
   font-family: 'Share Tech';
   font-family: 'Montserrat';
-  color: #2B3443;
-  font-size: 1.8em;
+  color: #222222;
+  font-size: 30px;
 }
 
 .light {
@@ -22,7 +22,7 @@
 }
 
 .title-sm {
-  color: var(--theme-dark);
+  color: var(--theme-light);
   margin: 0;
   font-weight: 600 !important;
   text-transform: uppercase;

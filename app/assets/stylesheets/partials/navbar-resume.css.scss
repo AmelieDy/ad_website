@@ -14,18 +14,23 @@
 }
 
 .navbar-light {
-  background: var(--theme-dark) !important;
+  background: #FFF !important;
   transition: 1s ease;
   box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.22);
 }
+
+#navbar .navbar-light .nav-link {
+  color: #222222 !important;
+
+}
 /* navbar links on right style */
-.nav-link.active,
-.nav-link:hover  {
+#navbar .nav-link.active,
+#navbar .nav-link:hover  {
   background: var(--theme-light) !important;
   transition: 0.2s ease;
 }
 
-.nav-link {
+#navbar .nav-link {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;

@@ -1,0 +1,49 @@
+#skills {
+  padding-top: 150px;
+  background: #F2F5F7;
+  background: #232426;
+}
+
+.skills-background {
+  // height: 600px;
+  background-image: image-url('minimal3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
+  margin-top: 100px;
+}
+
+
+.light-card {
+  background: var(--theme-light);
+}
+.dark-card {
+  background: rgba(48,48,48,0.05);
+
+}
+
+.skill-card {
+  font-family: 'Share Tech';
+  font-size: 1.2em;
+  letter-spacing: 0.5em;
+  text-align: center !important;
+  height: 260px;
+  color: white;
+}
+
+.align-items-center{
+  width: 100%;
+}
+.skill-card:hover{
+  background: var(--theme-dark);
+}
+
+.layer-skills {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(48,48,48,0.5);
+
+}

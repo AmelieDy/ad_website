@@ -1,0 +1,32 @@
+#tools {
+  padding-top: 150px;
+  /* background: #232426;
+  background: #8C8C8C; */
+}
+
+.tool-card {
+  text-align: center;
+  padding: 20px;
+
+}
+
+.tool-icon {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.tool-card h5 {
+  font-size: 14px;
+  margin-bottom: 26px;
+  font-weight: 600;
+  text-transform: capitalize;
+  /* color: #FFF; */
+}
+
+#tools-panel {
+  /* background: #F9F9FF;
+  background: #232426; */
+  padding: 100px 0px 100px 0px;
+}

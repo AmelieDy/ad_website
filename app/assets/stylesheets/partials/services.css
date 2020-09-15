@@ -2,7 +2,6 @@
 #services {
   margin-top: 160px;
   padding-bottom: 160px;
-  background: var(--light-grey);
 }
 
 .service-card {
@@ -29,8 +28,5 @@
   margin-bottom: 26px;
   font-weight: 600;
   position: relative;
-  font-family: 'Share Tech';
-  font-family: 'Montserrat';
-
   text-transform: capitalize;
 }

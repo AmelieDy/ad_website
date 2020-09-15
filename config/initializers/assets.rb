@@ -28,10 +28,18 @@ Rails.application.config.assets.precompile = [
                                                 "minimal3.jpg",
                                                 "support.png",
                                                 "layers.png",
+                                                "img_cv_big.jpg",
                                                 "detail.png",
                                                 "uniq.png",
                                                 "responsive.png",
                                                 "evolution.png",
                                                 "support.png",
+                                                "git.png",
+                                                "trello.png",
+                                                "eye.png",
+                                                "paperplane.png",
+                                                "user.png",
+                                                "slack.png",
+                                                "linux.png",
                                                 'three-dots.svg'
                                               ]

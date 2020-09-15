@@ -24,12 +24,37 @@
   width: 300px;
 }
 
-.ml {
-  font-weight: 300;
-  font-size: 3em;
-  margin-bottom: 60px;
-  font-family: 'Share Tech';
+.name {
+  color: var(--theme-light);
+  font-family: 'Montserrat';
+  margin-bottom: 100px;
+  margin-top: 0px;
 }
+
+.title-home {
+  font-family: 'Montserrat';
+}
+.ml {
+  font-weight: 100;
+  font-size: 2.6em;
+  margin-bottom: 60px;
+  font-family: 'Montserrat';
+}
+
+.ml span {
+  font-weight: 600;
+}
+
+.box {
+  position: absolute;
+  background: var(--theme-light);
+  height: 450px;
+  width: 450px;
+  left: 60px;
+  top: -60px;
+  opacity: 0.5;
+}
+
 
 /* svg mouse keyframes */
 @keyframes scroll {
@@ -46,12 +71,12 @@ svg #wheel {
 }
 
 svg {
-  width: 32px;
+  width: 28px;
 }
 
 .svg-container {
   position: absolute;
-  bottom: 15px;
+  bottom: 30px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -60,7 +85,7 @@ svg {
   position: relative;
   width: 240px;
   height: 240px;
-  color: var(--theme-light) !important;
+  color: var(--theme-dark) !important;
 }
 
 .caroussel > span {

@@ -1,0 +1,15 @@
+/* all titles of application settings */
+.title-lg {
+  z-index: 0.1em;
+  z-index: -1;
+  /* letter-spacing: -2px; */
+  /* text-transform: uppercase; */
+  display:inline-block;
+  font-weight: 600 !important;
+  color: #333333;
+  font-size: 30;
+}
+
+.light {
+  color: #FFF;
+}
