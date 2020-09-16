@@ -22,24 +22,18 @@
         = render 'svg_mouse.html.haml'
     .container
       .row
-        .col-lg-7
+        .col-lg-8.col-offset-4
           .presentation
-            .row
-              .col-lg-12
-                .home-content
-                  %h1.ml
-                    DÉVELOPPEUSE
-                    %span.caroussel
-                      %span RUBY ON RAILS
-                      %span ANGULAR
-                      %span FULL STACK
+            .home-content
+              %h1.name
+                Amélie Delory
+              %h1.ml
+                DÉVELOPPEUSE
+                %span.caroussel
+                  %span WEB
+                  %span FULL STACK
+                  %span RUBY ON RAILS
 
-            .row
-              .col-lg-8
-                -# %a.btn.btn-theme.contact-btn-home.wow.fadeInDown{'data-wow-offset': 0, href: "#contact"} Me contacter
-                %p
-                  Matuvu vous accompagne dans la création ou la refonte de votre site web adapaté à votre métier.
-                  Vous voulez une solution intuitive, évolutive et maintenable, je suis à votre écoute pour réaliser votre projet :)
 
             .row
               .col-lg-12
@@ -66,5 +60,7 @@
   -#             Son &#xE9;volution constante anime mon envie d'apprendre, de cr&#xE9;er, d'am&#xE9;liorer, d'optimiser les techniques de d&#xE9;veloppement et de design, afin de concr&#xE9;tiser ces projets de la fa&#xE7;on la plus adapt&#xE9;e possible.
   -#           %span.btn-theme En savoir plus
   = render 'about'
-  = render 'skills'
   = render 'experience'
+  = render 'skills'
+  = render 'portfolio'
+  = render 'contact'

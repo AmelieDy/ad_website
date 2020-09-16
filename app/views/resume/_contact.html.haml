@@ -1,0 +1,32 @@
+#contact
+  .row
+    .col-lg-6.image-contact
+      .layer
+    .col-lg-6.darker-bg
+      .contact-form
+        %h2.title-lg.light.wow.fadeInDown Contact
+        -# %h3.title-lg.light Discutons de votre projet !
+        = form_for @message, remote: true, id: 'contact-form', url: messages_path do |f|
+          .row
+            .col-md-6
+              .form-group
+                .error
+                = f.text_field  :name, required: true, placeholder: "Nom", class: "form-control"
+            .col-md-6
+              .form-group
+                = f.text_field  :firstname, required: true, placeholder: "Prénom", class: "form-control"
+          .row
+            .col-md-12
+              .form-group.text-white
+                = f.email_field :email, required: true,placeholder: "Email" ,class: "form-control"
+          .row
+            .col-md-12
+              .form-group
+                = f.text_area :body,  required: true, placeholder: 'Message', class: "form-control"
+          .row
+            .col-md-12
+              %button.submit.btn.btn-theme.wow.fadeInDown{'data-wow-offset': 0}
+                %span.initial-content Envoyer
+                %span.sending-content.hide
+                  = image_tag 'three-dots.svg', class: 'loading-svg'
+                %span.sent-content.hide Merci !

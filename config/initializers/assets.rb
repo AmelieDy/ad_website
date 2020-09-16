@@ -25,6 +25,7 @@ Rails.application.config.assets.precompile = [
                                                 "mountain.png",
                                                 "mountain.jpg",
                                                 "minimal.jpg",
+                                                "home-1.jpg",
                                                 "minimal3.jpg",
                                                 "support.png",
                                                 "layers.png",

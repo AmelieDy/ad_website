@@ -1,11 +1,10 @@
 #skills {
   padding-top: 150px;
-  background: #F2F5F7;
-  background: #232426;
+  // background: #F2F5F7;
+  // background: #232426;
 }
 
 .skills-background {
-  // height: 600px;
   background-image: image-url('minimal3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,20 +16,21 @@
 
 
 .light-card {
-  background: var(--theme-light);
+  // background: rgba(48,48,48,0.45);
+
 }
 .dark-card {
-  background: rgba(48,48,48,0.05);
-
+  // background: rgba(48,48,48,0.25);
 }
 
 .skill-card {
-  font-family: 'Share Tech';
-  font-size: 1.2em;
+  // font-family: 'Share Tech';
+  font-size: 1em;
   letter-spacing: 0.5em;
   text-align: center !important;
   height: 260px;
   color: white;
+  font-weight: 100;
 }
 
 .align-items-center{
@@ -44,6 +44,21 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(48,48,48,0.5);
+  background: rgba(48,48,48,0.8);
+
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 992px) {
+  .light-card {
+    background: rgba(48,48,48,0.05);
+  }
+  .skill-card {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+
+  }
+}
+@media screen and (min-width: 1200px)  {
 
 }

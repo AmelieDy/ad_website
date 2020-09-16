@@ -11,18 +11,18 @@
 }
 
 .tool-icon {
-  width: 54px;
-  height: 54px;
+  width: 44px;
+  height: 44px;
   margin-bottom: 20px;
   opacity: 0.5;
+  /* filter: invert(82%) sepia(52%) saturate(461%) hue-rotate(348deg) brightness(92%) contrast(90%); */
 }
 
 .tool-card h5 {
   font-size: 14px;
   margin-bottom: 26px;
-  font-weight: 600;
   text-transform: capitalize;
-  /* color: #FFF; */
+  color: var(--theme-light);
 }
 
 #tools-panel {

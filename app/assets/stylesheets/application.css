@@ -10,7 +10,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Baloo+2|Montserrat:100,300|Poppins:300,600,500|Share+Tech&display=swap');
 
 /* partials */
-@import 'partials/home.css' screen;
 @import 'partials/buttons.css' screen;
 
 
@@ -37,6 +36,7 @@
 .darker-bg {
   /* background: #141F33; */
   background: #161616;
+  background: #2d2d2d;
 }
 .dark-bg {
  background: #003D4E;
@@ -63,6 +63,10 @@
   background: var(--linear-bg);
 }
 
+.theme-light-color {
+  color: var(--theme-light);
+}
+
 /* body settings */
 
 body {
@@ -78,7 +82,8 @@ p {
   font-size: 14px;
   line-height: 1.6em;
   font-weight: 300 !important;
-  color: #777777;
+  color: #b5b5b5;
+  color: #adadad;
 }
 
 .titles-margin {
@@ -94,13 +99,16 @@ p {
   svg {
     width: 20px;
   }
+  p {
+    font-size: 13px;
+  }
+
+  .card-about {
+    padding: 20px !important;
+  }
 
   .ml {
     font-size: 1.9em;
-  }
-  .btn-theme {
-    padding: 10px;
-    font-size: 18px;
   }
 
   .center-sm {
@@ -148,6 +156,10 @@ p {
   .me {
     position: relative !important;
   }
+
+  .resume-card {
+    padding: 20px;
+  }
 }
 
 
@@ -156,4 +168,10 @@ p {
   .contact-form {
     padding: 150px !important;
   }
+
+  .resume-card {
+    padding: 40px;
+  }
+
+
 }

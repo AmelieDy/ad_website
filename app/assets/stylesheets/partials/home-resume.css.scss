@@ -1,0 +1,96 @@
+/* home settings, image on backgroung */
+#home {
+  height: 100vh;
+  background-image: image-url('home-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  color: #FFF;
+}
+
+
+/* description */
+#home .container {
+  position: relative;
+  top: 46%;
+  transform: translateY(-50%);
+}
+#home p{
+  color: #e0e0e0 !important;
+}
+
+.home-logo {
+  width: 300px;
+}
+
+.name {
+  color: var(--light-grey);
+  font-weight: 500;
+  margin-bottom: 40px;
+  font-size: 8em;
+  letter-spacing: 0.2em;
+}
+
+.title-home {
+}
+.ml {
+  font-weight: 100;
+  font-size: 3em;
+  margin-bottom: 20px;
+  letter-spacing: 0.5em;
+}
+
+.ml span {
+  font-weight: 600;
+}
+
+.box {
+  position: absolute;
+  background: var(--theme-light);
+  height: 450px;
+  width: 450px;
+  left: 60px;
+  top: -60px;
+  opacity: 0.5;
+}
+
+
+/* svg mouse keyframes */
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(60px);
+	}
+}
+
+svg #wheel {
+	animation: scroll ease 2s infinite;
+}
+
+svg {
+  width: 28px;
+}
+
+.svg-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.caroussel {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  color: var(--theme-dark) !important;
+}
+
+.caroussel > span {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  left: 10px;
+}

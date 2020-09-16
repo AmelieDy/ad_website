@@ -1,0 +1,33 @@
+
+-# #tools
+-#   .container
+-#     .row
+-#       .col-lg-12.text-center
+-#         %h2.title-lg Outils et environnement
+-#         -# %p Ce que j'utilise pour l'organisation de mes projets
+
+#tools-panel
+  .container
+    .row
+      .col-lg-12.text-center
+        %h3.title-lg.title-margin Outils et environnement
+    .row
+      .col-lg-3
+        .tool-card
+          = image_tag "git.png", class: "tool-icon"
+          %h5 Git
+
+      .col-lg-3
+        .tool-card
+          = image_tag "slack.png", class: "tool-icon"
+          %h5 Slack
+
+      .col-lg-3
+        .tool-card
+          = image_tag "trello.png", class: "tool-icon"
+          %h5 Trello
+
+      .col-lg-3
+        .tool-card
+          = image_tag "linux.png", class: "tool-icon"
+          %h5 Linux

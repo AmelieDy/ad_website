@@ -5,10 +5,7 @@
 }
 
 .btn {
-  padding: 10px 26px;
-  font-size: 14px;
   border-radius: 0px;
-  margin-top: 40px;
   box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
   cursor: pointer;
 }
@@ -28,4 +25,19 @@
   border: 2px solid var(--theme-light);
   background: transparent;
   color: var(--theme-light) !important;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 992px) {
+  .btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1200px)  {
+  .btn {
+    padding: 10px 26px;
+    margin-top: 40px;
+
+  }
 }
