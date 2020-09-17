@@ -2,12 +2,12 @@
 .title-lg {
   z-index: 0.1em;
   z-index: -1;
-  letter-spacing: 0.2em;
+  /* letter-spacing: 0.2em; */
   display:inline-block;
   font-weight: 600 !important;
   color: #333333;
-  padding-top: 10px;
-  margin-top: 100px;
+  padding-bottom: 5px;
+
 }
 
 .light {
@@ -19,11 +19,22 @@
 }
 
 
-.title-lg:before {
+/* .title-lg:before {
   content: "";
   width: 30px;
   height: 4px;
   background-color: var(--theme-dark);
   position: absolute;
-  top: 90px;
+  top: -10px;
+}
+ */
+
+
+.title-lg::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid var(--theme-light);
+  width: 30px;
+  position: relative;
+  bottom: -6px; /* your padding + border-width */
 }

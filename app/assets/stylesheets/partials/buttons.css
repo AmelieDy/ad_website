@@ -2,17 +2,21 @@
 .btn-theme {
   background: var(--theme-light);
   color: #FFF;
+  border: 2px solid var(--theme-light);
 }
 
 .btn {
   border-radius: 0px;
   box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
   cursor: pointer;
+  font-weight: 100;
 }
 
 .btn-theme:hover {
   background: var(--theme-dark);
   color: #FFF !important;
+  border: 2px solid var(--theme-dark);
+
 }
 
 .btn-theme-outline:hover {
@@ -28,16 +32,17 @@
 }
 
 
-@media screen and (min-width: 0px) and (max-width: 992px) {
+@media (min-width: 0px) and (max-width: 575.98px) {
   .btn {
     padding: 10px 20px;
     font-size: 13px;
   }
+
 }
-@media screen and (min-width: 1200px)  {
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) {
   .btn {
     padding: 10px 26px;
-    margin-top: 40px;
-
   }
 }

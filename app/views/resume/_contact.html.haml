@@ -4,8 +4,7 @@
       .layer
     .col-lg-6.darker-bg
       .contact-form
-        %h2.title-lg.light.wow.fadeInDown Contact
-        -# %h3.title-lg.light Discutons de votre projet !
+        %h3.title-lg.light.wow.fadeInDown Contact
         = form_for @message, remote: true, id: 'contact-form', url: messages_path do |f|
           .row
             .col-md-6

@@ -1,28 +1,45 @@
 #portfolio
-  .row
-    .col-lg-12.text-center.mb-5
-      %h3.title-lg Portfolio
-  .row
-    .col-lg-4.d-flex
-      .img-container
-        .layer-portfolio
-        = image_tag 'home-1.jpg', class: 'portfolio-img'
-      .title-portfolio.text-white{class:"align-items-center d-flex justify-content-center"}
-        %span.bold Ma
-        tuvu
+  .container
+    .row
+      .col-lg-12.text-center.mb-5
+        %h3.title-lg Portfolio
+    .row
 
-    .col-lg-4.d-flex
-      .img-container
-        .layer-portfolio
-        = image_tag 'home-1.jpg', class: 'portfolio-img'
-      .title-portfolio.text-white{class:"align-items-center d-flex justify-content-center"}
-        %span.bold C
-        V
 
-    .col-lg-4.d-flex
-      .img-container
-        .layer-portfolio
-        = image_tag 'home-1.jpg', class: 'portfolio-img'
-      .title-portfolio.text-white{class:"align-items-center d-flex justify-content-center"}
-        %span.bold R
-        TFM
+      .col-lg-6.grid
+
+        %figure.effect-chico
+          %img
+            = image_tag 'home-1.jpg', class: 'portfolio-img'
+          -# .layer-portfolio
+          %figcaption
+            %h2
+              %span Ma
+              TUVU
+            %p Site web démo pour agence web. RoR. Bootstrap.
+            %a.btn.btn-theme{:href => "/website"} VOIR
+
+      .col-lg-6.grid
+
+        %figure.effect-chico
+          %img
+            = image_tag 'minimal3.jpg', class: 'portfolio-img'
+          -# .layer-portfolio
+          %figcaption
+            %h2
+              C
+              %span V
+            %p Vous y êtes ! Ceci est mon CV. RoR. Bootstrap.
+            %a.btn.btn-theme{:href => "#"} VOUS Y ÊTES
+      .col-lg-6.grid
+
+        %figure.effect-chico
+          %img
+            = image_tag 'home-1.jpg', class: 'portfolio-img'
+          -# .layer-portfolio
+          %figcaption
+            %h2
+              Daily
+              %span Tech
+            %p Application web pour poster des articles sur des veilles technologiques. PHP
+            %a.btn.btn-theme{:href => "#"} WIP

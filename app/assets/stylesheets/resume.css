@@ -3,7 +3,7 @@
 @import 'partials/tools.css' screen;
 @import 'partials/skills.css' screen;
 @import 'partials/titles-resume.css' screen;
-@import 'partials/navbar-resume.css' screen;
+@import 'partials/navbar.css' screen;
 @import 'partials/contact.css' screen;
 @import 'partials/home-resume.css' screen;
 @import 'partials/portfolio.css' screen;
@@ -12,4 +12,8 @@
 
 body {
   background: var(--light-grey) !important;
+}
+
+.bold {
+  font-weight: 600;
 }
