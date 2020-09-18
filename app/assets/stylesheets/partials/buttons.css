@@ -12,18 +12,14 @@
   font-weight: 100;
 }
 
-.btn-theme:hover {
+.btn-theme:hover,
+.btn-theme-outline:hover {
   background: var(--theme-dark);
   color: #FFF !important;
   border: 2px solid var(--theme-dark);
 
 }
 
-.btn-theme-outline:hover {
-  color: var(--theme-dark) !important;
-  border: 2px solid var(--theme-dark);
-
-}
 
 .btn-theme-outline {
   border: 2px solid var(--theme-light);
@@ -31,10 +27,23 @@
   color: var(--theme-light) !important;
 }
 
+.icon-contact {
+  width: 20px;
+}
+
+.contact-buttons {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact-buttons .btn {
+  margin: 16px;
+}
 
 @media (min-width: 0px) and (max-width: 575.98px) {
   .btn {
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 13px;
   }
 
@@ -43,6 +52,6 @@
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 992px) {
   .btn {
-    padding: 10px 26px;
+    padding: 10px;
   }
 }

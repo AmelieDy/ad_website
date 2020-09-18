@@ -33,7 +33,7 @@
 .title-lg::after {
   content: "";
   display: block;
-  border-bottom: 3px solid var(--theme-light);
+  border-bottom: 3px solid var(--theme-dark);
   width: 30px;
   position: relative;
   bottom: -6px; /* your padding + border-width */

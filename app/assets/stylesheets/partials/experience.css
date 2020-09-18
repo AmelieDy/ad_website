@@ -1,12 +1,10 @@
 #experience {
   color: #fff;
-  margin-top: 160px;
   padding: 100px 0px;
-  background: #cca22e;
 }
 #experience p {
   /* text-align: justify; */
-  font-weight: 300 !important;
+  /* font-weight: 300 !important; */
 }
 
 #experience h6 {
@@ -17,8 +15,8 @@
 .experience-title {
   font-weight: 500;
   font-size: 1.2em;
-  letter-spacing: 0.1em;
-  color: var(--theme-light);
+  /* letter-spacing: 0.1em; */
+  color: var(--theme-dark);
 }
 
 .location-title {
@@ -42,7 +40,7 @@
 
 .tag-dark {
   color: #FFF;
-  background: var(--theme-light);
+  background: var(--theme-dark);
   /* background: #666666 !important; */
 }
 
@@ -53,16 +51,16 @@
 #education {
   padding: 100px 0px;
   color: #fff;
-
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {
-  .card-experience {
-    padding: 20px;
-  }
+
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 992px) {
-
+  #experience p {
+    text-align: justify;
+    line-height: 1.8em;
+  }
 }

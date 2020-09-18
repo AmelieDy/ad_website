@@ -55,8 +55,6 @@
 
 .grid figure h2 {
 	font-weight: 100;
-	font-size: 1.2em;
-	letter-spacing: 0.5em;
 }
 
 .grid figure h2 span {
@@ -136,11 +134,27 @@ figure.effect-chico:hover a {
 
 
 
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 0px) and (max-width: 575.98px) {
+	.grid figure h2 {
+		font-size: 1em;
+		letter-spacing: 0.3em;
+	}
+}
 
+figure.effect-chico p {
+	max-width: 300px;
+	font-size: 0.7em;
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width:  992px) {
+	.grid figure h2 {
+		font-size: 1.2em;
+		letter-spacing: 0.5em;
+	}
 
+	figure.effect-chico p {
+		max-width: 200px;
+		font-size: 1em;
+	}
 }

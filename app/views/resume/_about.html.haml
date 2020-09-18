@@ -1,13 +1,10 @@
 #about
   .container
     .row
-      .col-lg-12
-        %h2.title-lg.mb-5 À propos
-    .row.card-about
-
       .col-lg-5
-        .box-left
-        = image_tag 'img_cv_big.jpg', class: 'me'
+        .image-container
+          .layer-me
+          = image_tag 'img_cv_big.jpg', class: 'me'
 
       .col-lg-7
         #about-tab.nav.nav-pills{ :role => "tablist"}
@@ -24,13 +21,13 @@
           .col-md-12
             #about-tabContent.tab-content
               #page1.tab-pane.fade.show.active{"aria-labelledby" => "infos-tab", :role => "tabpanel"}
-                %h5 Vision
-                %p
-                  Le Web nous offre aujourd'hui un espace de libert&#xE9; cr&#xE9;atif et d'expression.
-                  C'est avant tout ce qui me passionne dans cet univers o&#xF9; nous sommes au coeur du Language,
-                  mati&#xE8;re premi&#xE8;re qui donne vie &#xE0; nos id&#xE9;es et nos projets, qu'ils soient simples ou compl&#xE8;tement d&#xE9;lirants...
-                  %br
-                  Son &#xE9;volution constante anime mon envie d'apprendre, de cr&#xE9;er, d'am&#xE9;liorer, d'optimiser les techniques de d&#xE9;veloppement et de design, afin de concr&#xE9;tiser ces projets de la fa&#xE7;on la plus adapt&#xE9;e possible.
+                %h5 Infos
+                %p Nom : Delory
+                %p Prénom : Amélie
+                %p Date : 1992
+                %p Tél : 06 20 00 35 44
+                %p Mail : amelie.delory@hotmail.fr
+                %p Ad : 6 hameau des Cailles, 62223 St Nicoals
               #page2.tab-pane.fade{"aria-labelledby" => "vision-tab", :role => "tabpanel"}
                 %h5 Vision
                 %p

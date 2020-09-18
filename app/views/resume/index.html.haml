@@ -2,17 +2,21 @@
   %nav.navbar.navbar-expand-lg.navbar-dark#navnav
     .container
       %a.navbar-brand.hvr-sweep-to-right.brand-resume{:href => "#home"}
-        A D
+        AD
       %button.navbar-toggler{"aria-controls" => "navbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
         %span.navbar-toggler-icon
+          -# = image_tag 'menu.png', class: 'icon-white'
       #navbar.collapse.navbar-collapse
         %ul.navbar-nav.ml-auto.scrollspy-example
+
           %li.nav-item
-            %a.nav-link{:href => "#services"} Compétences
+            %a.nav-link{:href => "#experience"} Expérience
           %li.nav-item
-            %a.nav-link{:href => "#quality"} Expérience
+            %a.nav-link{:href => "#education"} Formation
           %li.nav-item
-            %a.nav-link{:href => "#quality"} Formation
+            %a.nav-link{:href => "#skills"} Compétences
+          %li.nav-item
+            %a.nav-link{:href => "#skills"} Portfolio
           %li.nav-item
             %a.nav-link{:href => "#contact"} Contact
 %section
@@ -37,30 +41,15 @@
 
             .row
               .col-lg-12
-                %a.btn.btn-theme.wow.fadeInLeft{'data-wow-offset': 0} Me contacter
+                %a.btn.btn-theme-outline.wow.fadeInLeft{'data-wow-offset': 0} Me contacter
                 %a.btn.btn-theme-outline.wow.fadeInRight{'data-wow-offset': 0} Télécharger mon CV
-      -#   .col-lg-5
-      -#     .box
-      -#     = image_tag 'img_cv.jpg', class: 'me'
 
-  -# #about
-  -#   -# .line
-  -#   -# .box-left
-  -#   .container
-  -#     .row
-  -#       .col-lg-5
-  -#         -# .box{"data-rellax-speed" => "1"}
-  -#         = image_tag 'img_cv.jpg', class: 'me'
-  -#       .col-lg-7
-  -#         %p
-  -#           Le Web nous offre aujourd'hui un espace de libert&#xE9; cr&#xE9;atif et d'expression.
-  -#           C'est avant tout ce qui me passionne dans cet univers o&#xF9; nous sommes au coeur du Language,
-  -#           mati&#xE8;re premi&#xE8;re qui donne vie &#xE0; nos id&#xE9;es et nos projets, qu'ils soient simples ou compl&#xE8;tement d&#xE9;lirants...
-  -#           %br
-  -#             Son &#xE9;volution constante anime mon envie d'apprendre, de cr&#xE9;er, d'am&#xE9;liorer, d'optimiser les techniques de d&#xE9;veloppement et de design, afin de concr&#xE9;tiser ces projets de la fa&#xE7;on la plus adapt&#xE9;e possible.
-  -#           %span.btn-theme En savoir plus
+%section
   = render 'about'
+%section
   = render 'experience'
+%section
   = render 'skills'
+%section
   = render 'portfolio'
-  = render 'contact'
+= render 'contact'
