@@ -6,6 +6,7 @@
 /* bootstrap  */
 @import "bootstrap";
 @import 'partials/animate.css' screen;
+@import 'partials/titles.css' screen;
 
 
 /* google fonts */
@@ -15,13 +16,7 @@
 @import 'partials/buttons.css' screen;
 
 
-/* set root variables */
-:root {
-  --light-grey: #F8F8F8;
-  --theme-dark: #96351E;
-  --theme-light: #DBB98F;
-  --linear-bg: linear-gradient(to bottom left,rgba(72,72,72,0.7),rgba(30,30,30,1)) ;
-}
+
 
 /* set background classes to add on html elements */
 
@@ -37,6 +32,7 @@
 }
 .theme-dark-bg {
   background: var(--theme-dark);
+  color: #FFF !important;
 }
 .theme-light-bg {
   background: var(--theme-light);
@@ -71,12 +67,9 @@ body {
   font-weight: 300;
 }
 
-p {
-  font-size: 0.85em;
-  line-height: 2em !important;
-  font-weight: 300 !important;
-  color: #3B3B3B;
-}
+/* html {
+  scroll-behavior: smooth;
+} */
 
 .titles-margin {
   margin-bottom: 40px;

@@ -1,31 +1,7 @@
--# <!DOCTYPE html>
--# <html>
--#   <head>
--#     <title>Amélie Delory</title>
--#     <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
--#     <script src= "https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
--#
--#     <%= csrf_meta_tags %>
--#     <%= csp_meta_tag %>
--#
--#     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
--#     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
--#     <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js" %>
--#     <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/additional-methods.min.js" %>
--#
--#   </head>
--#
--#   <body >
--#     <%= yield %>
--#   </body>
--# </html>
-
-
 !!!
 %html
   %head
-    -# %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Amélie Delory
+    %title= controller_name == 'resume' ? 'Amélie Delory' : 'MATUVU'
     = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"
     = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"
 
@@ -34,8 +10,6 @@
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
     = stylesheet_link_tag params[:controller]
-    -# = javascript_pack_tag params[:controller]
-
 
     = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"
     = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/additional-methods.min.js"

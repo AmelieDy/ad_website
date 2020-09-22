@@ -13,13 +13,13 @@
 }
 
 .quality-card h5 {
-  font-size: 23px;
+  font-size: 18px;
   margin: 0;
   display: block;
   margin-bottom: 26px;
-  font-weight: 300;
+  font-weight: 600;
   position: relative;
-  font-family: 'Share Tech';
+  text-transform: capitalize;
 }
 
 .quality-icon {

@@ -4,32 +4,27 @@
   z-index: -1;
   display:inline-block;
   font-weight: 500 !important;
-  margin-bottom: 50px;
-  font-family: 'Share Tech';
-  font-family: 'Montserrat';
-  color: #222222;
-  font-size: 30px;
+  color: #333333;
+  padding-bottom: 6px;
 }
 
 .light {
-  color: var(--light-grey);
+  color: #FFF;
 }
 
-.dark {
-  color: #0C2742;
+.title-margin {
+  margin-bottom: 60px;
+}
+
+.title-lg::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid var(--theme-light);
+  width: 30px;
+  position: relative;
+  bottom: -6px; /* your padding + border-width */
 }
 
 .title-sm {
   color: var(--theme-light);
-  margin: 0;
-  font-weight: 600 !important;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 0.2em;
-  margin-bottom: 20px;
-  display: block;
-}
-.title-sm.light {
-  color: var(--theme-light);
-
 }

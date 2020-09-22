@@ -98,11 +98,6 @@ $(document).ready(function() {
       .appendTo('.caroussel');
   },  4000);
 
-  $('a#infos-tab').click(function(e){
-      // Special stuff to do when this link is clicked...
 
-      // Cancel the default action
-      e.preventDefault();
-  });
 
 });

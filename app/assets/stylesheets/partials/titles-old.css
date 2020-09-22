@@ -1,0 +1,33 @@
+/* all titles of application settings */
+.title-lg {
+  z-index: 0.1em;
+  z-index: -1;
+  display:inline-block;
+  font-weight: 500 !important;
+  margin-bottom: 50px;
+  color: #222222;
+  font-size: 30px;
+}
+
+.light {
+  color: var(--light-grey);
+}
+
+.dark {
+  color: #0C2742;
+}
+
+.title-sm {
+  color: var(--theme-light);
+  margin: 0;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+  display: block;
+}
+.title-sm.light {
+  color: var(--theme-light);
+
+}
