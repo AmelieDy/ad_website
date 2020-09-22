@@ -2,19 +2,22 @@
   .row
     .col-lg-6.image-contact
       .layer
-      .contact-buttons.text-center
-        .btn.btn-theme-outline
-          = image_tag 'in.png', class: "icon-white icon-contact", title: 'Linked In'
-        .btn.btn-theme-outline
-          = image_tag 'soundcloud.png', class: "icon-white icon-contact"
-        .btn.btn-theme-outline
-          = image_tag 'shift.png', class: "icon-white icon-contact"
-        .btn.btn-theme-outline
-          = image_tag 'git.png', class: "icon-white icon-contact"
+      .contact-buttons.text-center.wow.flipInX
+
+        %a.btn.btn-theme-outline{href: "https://www.linkedin.com/in/am%C3%A9lie-delory-9707b111b/", target: "_blank"}
+          = image_tag 'contact/in.png', class: "icon-white icon-contact", title: 'Linked In'
+        %a.btn.btn-theme-outline{href: "https://soundcloud.com/key-brain-chemical", target: "_blank"}
+          = image_tag 'contact/soundcloud.png', class: "icon-white icon-contact"
+        %a.btn.btn-theme-outline{href: "https://slides.com/amelie-d#_=_", target: "_blank"}
+          = image_tag 'contact/shift.png', class: "icon-white icon-contact"
+        %a.btn.btn-theme-outline{href: "https://framagit.org/AmelieD", target: "_blank"}
+          = image_tag 'contact/git.png', class: "icon-white icon-contact"
+
+
 
     .col-lg-6.darker-bg
       .contact-form
-        %h3.title-lg.light.wow.fadeInDown Contact
+        %h3.title-lg.light Contact
         = form_for @message, remote: true, id: 'contact-form', url: messages_path do |f|
           .row
             .col-md-6
@@ -34,8 +37,21 @@
                 = f.text_area :body,  required: true, placeholder: 'Message', class: "form-control"
           .row
             .col-md-12
-              %button.submit.btn.btn-theme.wow.fadeInDown{'data-wow-offset': 0}
-                %span.initial-content Envoyer
-                %span.sending-content.hide
-                  = image_tag 'three-dots.svg', class: 'loading-svg'
-                %span.sent-content.hide Merci !
+              %button.submit.btn.btn-theme.wow.fadeInDown.initial-content{'data-wow-offset': 0}
+                %span Envoyer
+              %button.submit.btn.btn-theme.sent-content.hide.no_cursor
+                %span Envoyé !
+      .baniere.text-center
+        .row
+          .col-4
+            = image_tag 'contact/phone.png'
+            %br
+            %span.light 06 20 00 35 44
+          .col-4
+            = image_tag 'contact/email.png'
+            %br
+            %span.light amelie.delory@hotmail.fr
+          .col-4
+            = image_tag 'contact/location.png'
+            %br
+            %span.light Arras

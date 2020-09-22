@@ -5,9 +5,11 @@
 
 /* bootstrap  */
 @import "bootstrap";
+@import 'partials/animate.css' screen;
+
 
 /* google fonts */
-@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Baloo+2|Montserrat:100,300|Poppins:300,600,500|Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Baloo+2|Montserrat:100,300|Poppins:100,300,600,500|Share+Tech&display=swap');
 
 /* partials */
 @import 'partials/buttons.css' screen;
@@ -16,15 +18,8 @@
 /* set root variables */
 :root {
   --light-grey: #F8F8F8;
-  --theme-dark: #F47A55;
-  --theme-dark: #eac43d;
-  --theme-dark: #E2B63F;
-  --theme-light: #fbb03b;
-  --theme-light: #e0c062;
-  --theme-light: #E8C565;
-
-  --linear-bg: linear-gradient(220deg,rgba(53,80,160,0.27) 0%,#141F33 100%);
-  --linear-bg: linear-gradient(to top,rgba(48,48,48,1),rgba(48,48,48,1) );
+  --theme-dark: #96351E;
+  --theme-light: #DBB98F;
   --linear-bg: linear-gradient(to bottom left,rgba(72,72,72,0.7),rgba(30,30,30,1)) ;
 }
 
@@ -36,7 +31,6 @@
 .darker-bg {
   /* background: #141F33; */
   background: #161616;
-  background: #2d2d2d;
 }
 .dark-bg {
  background: #003D4E;
@@ -68,21 +62,20 @@
 }
 
 /* body settings */
-
 body {
   overflow-x: hidden;
   margin: 0 auto;
   background: var(--light-grey) !important;
   background: #FFF !important;
   font-family: 'Poppins', sans-serif !important;
-  /* position: relative; */
+  font-weight: 300;
 }
 
 p {
-  font-size: 14px;
-  line-height: 1.6em;
+  font-size: 0.85em;
+  line-height: 2em !important;
   font-weight: 300 !important;
-  color: #adadad;
+  color: #3B3B3B;
 }
 
 .titles-margin {

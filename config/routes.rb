@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :website, only: [:index]
   resources :resume, only: [:index]
   root "website#index"
+  get 'download_pdf', to: "resume#download_pdf"
 end

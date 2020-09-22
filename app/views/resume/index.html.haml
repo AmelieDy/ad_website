@@ -1,5 +1,5 @@
 %header
-  %nav.navbar.navbar-expand-lg.navbar-dark#navnav
+  %nav.navbar.navbar-expand-lg.navbar-dark#scrollspy
     .container
       %a.navbar-brand.hvr-sweep-to-right.brand-resume{:href => "#home"}
         AD
@@ -16,7 +16,7 @@
           %li.nav-item
             %a.nav-link{:href => "#skills"} Compétences
           %li.nav-item
-            %a.nav-link{:href => "#skills"} Portfolio
+            %a.nav-link{:href => "#portfolio"} Portfolio
           %li.nav-item
             %a.nav-link{:href => "#contact"} Contact
 %section
@@ -41,11 +41,12 @@
 
             .row
               .col-lg-12
-                %a.btn.btn-theme-outline.wow.fadeInLeft{'data-wow-offset': 0} Me contacter
-                %a.btn.btn-theme-outline.wow.fadeInRight{'data-wow-offset': 0} Télécharger mon CV
+                %a.btn.btn-theme.wow.fadeInLeft{href: '#contact', 'data-wow-offset': 0} CONTACT
+                = link_to "TÉLÉCHARGER CV", download_pdf_path, target: '_blank', class: 'btn btn-theme wow fadeInRight'
 
-%section
-  = render 'about'
+
+-# %section
+-#   = render 'about'
 %section
   = render 'experience'
 %section

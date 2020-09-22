@@ -1,36 +1,32 @@
-#experience {
-  color: #fff;
-  padding: 100px 0px;
-}
-#experience p {
-  /* text-align: justify; */
-  /* font-weight: 300 !important; */
+.location-date,
+.description {
+  padding: 40px;
 }
 
-#experience h6 {
-  font-weight: 100 !important;
+.location-date{
+  background: var(--theme-light);
 }
-
 
 .experience-title {
   font-weight: 500;
-  font-size: 1.2em;
-  /* letter-spacing: 0.1em; */
-  color: var(--theme-dark);
+  font-size: 1em;
+  text-transform: capitalize;
 }
 
 .location-title {
-  font-weight: 100;
-  font-size: 1em;
+  font-size: 1.2;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .tag {
   padding: 6px 10px;
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 13px;
   width: auto;
   display: inline-block;
   font-weight: 300;
+  box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
 }
 
 .tag-light {
@@ -39,19 +35,24 @@
 }
 
 .tag-dark {
+  background: var(--theme-light);
   color: #FFF;
-  background: var(--theme-dark);
-  /* background: #666666 !important; */
+  box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
 }
 
 .resume-card {
-  margin-bottom: 40px;
+  box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
+  margin-bottom: 20px;
 }
 
-#education {
-  padding: 100px 0px;
-  color: #fff;
+.description p {
+  white-space: pre-line;
 }
+
+#experience {
+  margin-bottom: 180px;
+}
+
 
 @media (min-width: 0px) and (max-width: 575.98px) {
 
@@ -61,6 +62,6 @@
 @media (min-width: 992px) {
   #experience p {
     text-align: justify;
-    line-height: 1.8em;
+    line-height: 1.5em;
   }
 }

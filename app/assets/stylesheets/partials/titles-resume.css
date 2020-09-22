@@ -2,12 +2,10 @@
 .title-lg {
   z-index: 0.1em;
   z-index: -1;
-  /* letter-spacing: 0.2em; */
   display:inline-block;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   color: #333333;
-  padding-bottom: 5px;
-
+  padding-bottom: 6px;
 }
 
 .light {
@@ -18,22 +16,10 @@
   margin-bottom: 60px;
 }
 
-
-/* .title-lg:before {
-  content: "";
-  width: 30px;
-  height: 4px;
-  background-color: var(--theme-dark);
-  position: absolute;
-  top: -10px;
-}
- */
-
-
 .title-lg::after {
   content: "";
   display: block;
-  border-bottom: 3px solid var(--theme-dark);
+  border-bottom: 3px solid var(--theme-light);
   width: 30px;
   position: relative;
   bottom: -6px; /* your padding + border-width */

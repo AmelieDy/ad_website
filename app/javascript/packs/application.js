@@ -44,9 +44,16 @@ $(document).ready(function() {
 
   $('.submit').click(function(){
     if ($("form").valid()) {
-      $('.sending-content').show();
+      $('.sent-content').show();
+      $('.sent-content').addClass('wow fadeInLeft');
+
       $('.initial-content').hide();
     }
+  });
+
+  $("#cv").click(function() {
+    // // hope the server sets Content-Disposition: attachment!
+    window.location = 'images/pdf/cv_dev.pdf';
   });
 
   function scroll_nav() {
@@ -79,19 +86,6 @@ $(document).ready(function() {
     }, 300);
   });
 
-  // var textWrapper = document.querySelector('.ml3');
-  // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-  // anime.timeline({loop: false})
-  //   .add({
-  //     targets: '.ml3 .letter',
-  //     opacity: [0,1],
-  //     easing: "easeInOutQuad",
-  //     duration: 2250,
-  //     delay: (el, i) => 40 * (i+1)
-  //   });
-  // $('.contact-btn-home').hide();
-  // $('.contact-btn-home').delay(2200).show(0);
 
   $(".caroussel > span:gt(0)").hide();
 

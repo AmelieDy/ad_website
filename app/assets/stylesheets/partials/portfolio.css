@@ -1,4 +1,7 @@
 /* Common style */
+.grid {
+	margin-bottom: 15px;
+}
 .grid figure {
 	position: relative;
 	float: left;
@@ -54,12 +57,9 @@
 }
 
 .grid figure h2 {
-	font-weight: 100;
+	font-weight: 500;
 }
 
-.grid figure h2 span {
-	font-weight: 800;
-}
 
 .grid figure h2,
 .grid figure p {
@@ -93,17 +93,6 @@ figure.effect-chico figcaption {
 	padding: 3em;
 }
 
-/* figure.effect-chico figcaption::before {
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	bottom: 30px;
-	left: 30px;
-	border: 1px solid var(--theme-light);
-	content: '';
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-} */
 
 figure.effect-chico figcaption::before,
 figure.effect-chico p {
@@ -118,7 +107,6 @@ figure.effect-chico h2 {
 
 figure.effect-chico p {
 	margin: 0 auto;
-	max-width: 200px;
 	font-size: 0.9em;
 	-webkit-transform: scale(1.5);
 	transform: scale(1.5);
@@ -154,7 +142,7 @@ figure.effect-chico p {
 	}
 
 	figure.effect-chico p {
-		max-width: 200px;
-		font-size: 1em;
+		max-width: 300px;
+		font-size: 0.9em;
 	}
 }

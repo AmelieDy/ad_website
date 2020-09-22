@@ -6,40 +6,37 @@
     .row
 
 
-      .col-lg-6.grid
+      .col-lg-6.grid.wow.bounceInDown
 
         %figure.effect-chico
           %img
-            = image_tag 'home-1.jpg', class: 'portfolio-img'
+            = image_tag 'layers/home-1.jpg', class: 'portfolio-img'
           -# .layer-portfolio
           %figcaption
             %h2
-              %span Ma
-              TUVU
+              MATUVU
             %p Site web démo pour agence web. RoR. Bootstrap.
-            %a.btn.btn-theme{:href => "/website"} VOIR
+            %a.btn.btn-theme{:href => "/website", target: "_blank"} VOIR
 
-      .col-lg-6.grid
+      .col-lg-6.grid.wow.bounceInRight
 
         %figure.effect-chico
           %img
-            = image_tag 'minimal3.jpg', class: 'portfolio-img'
+            = image_tag 'layers/minimal3.jpg', class: 'portfolio-img'
           -# .layer-portfolio
           %figcaption
             %h2
-              C
-              %span V
+              CURRICULUM
             %p Vous y êtes ! Ceci est mon CV. RoR. Bootstrap.
-            %a.btn.btn-theme{:href => "#"} VOUS Y ÊTES
-      .col-lg-6.grid
+            %a.btn.btn-theme.no_cursor VOUS Y ÊTES
+      .col-lg-6.grid.wow.bounceInUp
 
         %figure.effect-chico
           %img
-            = image_tag 'home-1.jpg', class: 'portfolio-img'
+            = image_tag 'layers/minimal.jpg', class: 'portfolio-img'
           -# .layer-portfolio
           %figcaption
             %h2
-              Daily
-              %span Tech
+              DAILY TECH
             %p Application web pour poster des articles sur des veilles technologiques. PHP
-            %a.btn.btn-theme{:href => "#"} WIP
+            %a.btn.btn-theme.no_cursor WIP

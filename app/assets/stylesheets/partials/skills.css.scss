@@ -2,15 +2,13 @@
 }
 
 .skills-background {
-  background-image: image-url('minimal3.jpg');
+  background-image: image-url('layers/minimal3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
   position: relative;
 }
-
-
 
 .align-items-center{
   width: 100%;
@@ -30,18 +28,15 @@
   letter-spacing: 0.5em;
   text-align: center !important;
   color: white;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.2em;
   font-size: 16px;
   height: 160px;
 }
 
-
-
-@media (min-width: 0px) and (max-width: 575.98px) {
-
+#skills h6 {
+  font-weight: 500;
 }
-
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width:  992px) {

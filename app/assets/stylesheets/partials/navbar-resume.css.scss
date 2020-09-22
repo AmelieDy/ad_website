@@ -38,6 +38,7 @@
   padding: 30px 20px !important;
   color: #FFF !important;
   font-size: 14px !important;
+  font-weight: 300 !important;
 }
 
 /* set navbar brand style */
@@ -51,11 +52,10 @@
 }
 
 .navbar-toggler-icon {
-
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(107%) contrast(104%) !important;
-
 }
 
 .navbar-toggler {
   border: none;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(107%) contrast(104%) !important;
 }

@@ -1,71 +1,47 @@
-#experience.darker-bg
+#experience
   .container
     .row
-      .col-lg-4
-
-        %h3.title-lg.mb-5.light
+      .col-lg-12.text-center
+        %h3.title-lg.mb-5.wow.bounceInLeft
           Expérience
-      .col-lg-8
-        .resume-card
-          %h4.experience-title Développeuse web full stack
-          %h5.location-title Direct Burotic, Denain 59
-          %h6.mb-5.text-thin 2016 - 2019
-          %p
-            Conception et développement de l’outil de gestion (CRM) basé sur
-            une solution Ruby On Rails avec des modules répondant aux
-            différents enjeux de l’entreprise : screener, plannings d’appels, devis,
-            factures, sav, plateformes de gestion comptable et de recouvrement,
-            référencement produits, système de communication interne entre les
-            différents services, e-mailing automatique pour les relances.
-            %br
-            Gestion des leads via une application développée en Ruby On Rails :
-            récupération de fichiers en CSV, intégration dans la base de données,
-            répartition des leads aux commerciaux selon plusieurs filtres via API.
-            %br
-            Formation du personnel à l’utilisation des différents outils mis en
-            place.
-            %br
-            Mise en place de systèmes d’automatisation des tâches et de micro
-            services.
-            %br
-            Référencement des produits, gestion des SAV et stocks.
-            %br
-            Fonction de DPO
+    - @experiences.where(experience_type: 0).each do |work|
+      .row.resume-card.wow.bounceInLeft
+        .col-lg-3.location-date.light
+          %h5.location-title= work.location
+          %h6
+            - if work.start_date.year != work.end_date.year
+              = work.start_date.year
+              = ' - '
+            = work.end_date.year
+        .col-lg-9.bg-white.description
+          %h4.experience-title.mb-5= work.title
+          %p= work.description
           .mb-5
-          .tag.tag-dark ruby on rails
-          .tag.tag-dark jquery
-          .tag.tag-dark ajax
-          .tag.tag-dark api
-          .tag.tag-dark mysql
-          .tag.tag-dark boostrap
-          .tag.tag-dark materialize
+          - work.skills.order(:priority).each do |s|
+            .tag.tag-dark.wow.fadeInLeft= s.name
 
-#education.darker-bg
+
+#education
   .container
     .row
-      .col-lg-4
-
-        %h3.title-lg.mb-5.light
+      .col-lg-12.text-center
+        %h3.title-lg.mb-5.wow.bounceInLeft
           Formation
-      .col-lg-8
-        .resume-card
-          %h4.experience-title Certification Nationale Grande École du Numérique
-          %h5.location-title Popschool, valenciennes 59
-          %h6.mb-5.text-thin 2016
-          %p
-            Conception d’applications en PHP et Ruby On Rails en lien avec le
-            fonctionnement de la formation
-          -# .mb-5
-          -# .tag.tag-dark php
-          -# .tag.tag-dark ruby on rails
-          -# .tag.tag-dark jquery
-          -# .tag.tag-dark api
+    - @experiences.where(experience_type: 1).each do |education|
+      .row.resume-card.wow.bounceInLeft
+        .col-lg-3.location-date.light
+          %h5.location-title= education.location
+          %h6
+            - if education.start_date.year != education.end_date.year
+              = education.start_date.year
+              = ' - '
+            = education.end_date.year
+        .col-lg-9.bg-white.description
 
-        .resume-card
-          %h4.experience-title BTS Assistant de Manager
-          %h5.location-title Lycée Guy Mollet, Arras 62
-          %h6.mb-5.text-thin 2014
-          %p Stage au service des realtions internationales – mairie d’Arras
-          -# .mb-5
-          -# .tag.tag-dark anglais
-          -# .tag.tag-dark bases de données
+          %h4.experience-title.mb-5= education.title
+
+          %p= education.description
+
+          .mb-5
+          - education.skills.order(:priority).each do |s|
+            .tag.tag-dark.wow.fadeInLeft= s.name
