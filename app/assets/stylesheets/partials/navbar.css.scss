@@ -4,51 +4,69 @@
   width: 100%;
   top: 0;
   z-index: 1000;
-  padding: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .navbar-transparent {
-  background: transparent !important;
   background: linear-gradient(rgba(50,50,51,12)) !important;
   transition: 0.2s ease;
+  color: #FFF !important;
 }
 
 .navbar-light {
   background: var(--theme-dark) !important;
+  background: #161616 !important;
   transition: 1s ease;
-  box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.22);
-}
-/* navbar links on right style */
-.nav-link.active,
-.nav-link:hover  {
-  background: var(--theme-light) !important;
-  transition: 0.2s ease;
 }
 
-.nav-link {
+.navbar-light .nav-link {
+  color: #FFF !important;
+}
+
+/* navbar links on right style */
+#navbar .nav-link.active,
+#navbar .nav-link:hover  {
+  background: var(--theme-light) !important;
+  transition: 0.2s ease;
+  color: #FFF !important;
+}
+
+#navbar .nav-link {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  padding: 20px 40px 20px 40px !important;
-  // border-right: 1px solid var(--theme-light);
-  color: #FFF !important;
+  padding: 30px 20px !important;
   font-size: 14px !important;
+  font-weight: 300 !important;
 }
 
 /* set navbar brand style */
-.navbar-brand {
-  letter-spacing: -2px;
-  font-size: 1.8em !important;
+.brand-resume {
+  font-size: 1.3em !important;
   color: #FFF !important;
-  padding: 0;
+  border: 2px solid #FFF;
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 10px;
 }
 
-.brand-resume {
-  font-family: 'Share Tech' !important;
+.brand-website {
+  color: #FFF !important;
+  font-size: 1.3em !important;
 }
 
 .navbar-logo {
   width: 40px;
   margin-right: 10px;
   color: #FFF;
+}
+
+.navbar-transparent .navbar-toggler-icon,
+.navbar-light .navbar-toggler-icon {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(107%) contrast(104%) !important;
+}
+
+.navbar-toggler {
+  border: none;
 }

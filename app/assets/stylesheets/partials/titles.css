@@ -1,7 +1,5 @@
 /* all titles of application settings */
 .title-lg {
-  z-index: 0.1em;
-  z-index: -1;
   display:inline-block;
   font-weight: 500 !important;
   color: #333333;
@@ -26,5 +24,16 @@
 }
 
 .title-sm {
-  color: var(--theme-light);
+  color: var(--theme-light) !important;
+}
+
+@media(max-width: 767px){
+  .title-lg {
+    font-size: 1.6em;
+    text-align: left !important;
+    display: block;
+  }
+  .title-sm {
+    text-align: left !important;
+  }
 }

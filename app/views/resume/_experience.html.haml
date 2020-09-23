@@ -1,7 +1,7 @@
 #experience
   .container
     .row
-      .col-lg-12.text-center
+      .col-lg-12
         %h3.title-lg.mb-5.wow.bounceInLeft
           Expérience
     - @experiences.where(experience_type: 0).each do |work|
@@ -18,13 +18,12 @@
           %p= work.description
           .mb-5
           - work.skills.order(:priority).each do |s|
-            .tag.tag-dark.wow.fadeInLeft= s.name
-
+            .tag.wow.fadeInLeft= s.name
 
 #education
   .container
     .row
-      .col-lg-12.text-center
+      .col-lg-12
         %h3.title-lg.mb-5.wow.bounceInLeft
           Formation
     - @experiences.where(experience_type: 1).each do |education|
@@ -37,11 +36,8 @@
               = ' - '
             = education.end_date.year
         .col-lg-9.bg-white.description
-
           %h4.experience-title.mb-5= education.title
-
           %p= education.description
-
           .mb-5
           - education.skills.order(:priority).each do |s|
-            .tag.tag-dark.wow.fadeInLeft= s.name
+            .tag.wow.fadeInLeft= s.name

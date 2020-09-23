@@ -1,26 +1,47 @@
 /* import needed stylesheets */
 @import 'partials/home.css' screen;
-@import 'partials/buttons.css' screen;
-@import 'partials/contact.css' screen;
-@import 'partials/home.css' screen;
 @import 'partials/quality.css' screen;
-@import 'partials/navbar.css' screen;
 @import 'partials/services.css' screen;
 @import 'partials/website.css' screen;
 
 /* set root variables */
 :root {
   --light-grey: #F8F8F8;
-  --theme-dark: #B97076;
-  --theme-dark: #1D3D59;
-  --theme-light: #CCA06E;
-  --theme-light: #FDB93A;
+  --theme-dark: #0B4141;
+  --theme-light: #8AA899;
   --linear-bg: linear-gradient(to bottom left,rgba(72,72,72,0.7),rgba(30,30,30,1)) ;
 }
+
+body {
+  background: var(--light-grey) !important;
+}
+
 
 p {
   font-size: 0.9em;
   line-height: 2em !important;
   font-weight: 300 !important;
   color: #3B3B3B;
+}
+
+.service-card,
+.quality-card {
+  padding: 60px !important;
+}
+
+.visible-card {
+  padding: 80px !important;
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--linear-bg);
+}
+
+@media(max-width: 767px){
+  .visible-card {
+    padding: 60px 40px !important;
+  }
 }

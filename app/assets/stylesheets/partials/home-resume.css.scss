@@ -40,32 +40,6 @@
   font-weight: 600;
 }
 
-
-/* svg mouse keyframes */
-@keyframes scroll {
-	0% {
-		transform: translateY(0);
-	}
-	30% {
-		transform: translateY(60px);
-	}
-}
-
-svg #wheel {
-	animation: scroll ease 2s infinite;
-}
-
-svg {
-  width: 20px;
-}
-
-.svg-container {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .caroussel {
   position: relative;
   width: 240px;
@@ -79,8 +53,6 @@ svg {
   position: absolute;
   left: 10px;
 }
-
-
 
 @media (min-width: 0px) and (max-width: 575.98px) {
   .name {

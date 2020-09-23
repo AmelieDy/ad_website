@@ -1,41 +1,34 @@
 /*
 *= require_self
-
 */
 
 /* bootstrap  */
 @import "bootstrap";
+/* partials */
 @import 'partials/animate.css' screen;
+@import 'partials/buttons.css' screen;
+@import 'partials/contact.css' screen;
+@import 'partials/navbar.css' screen;
 @import 'partials/titles.css' screen;
-
-
 /* google fonts */
 @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Baloo+2|Montserrat:100,300|Poppins:100,300,600,500|Share+Tech&display=swap');
 
-/* partials */
-@import 'partials/buttons.css' screen;
-
-
-
-
 /* set background classes to add on html elements */
-
 .lighter-grey-bg {
   background: #e5e5e5;
 }
 .darker-bg {
-  /* background: #141F33; */
   background: #161616;
 }
 .dark-bg {
  background: #003D4E;
 }
-.theme-dark-bg {
-  background: var(--theme-dark);
-  color: #FFF !important;
-}
 .theme-light-bg {
   background: var(--theme-light);
+}
+
+.theme-dark-bg {
+  background: var(--theme-dark);
 }
 .white-bg {
   background: #FFF;
@@ -45,16 +38,6 @@
 }
 .icon-white {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(107%) contrast(104%);
-}
-.layer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--linear-bg);
-}
-
-.theme-light-color {
-  color: var(--theme-light);
 }
 
 /* body settings */
@@ -66,87 +49,46 @@ body {
   font-family: 'Poppins', sans-serif !important;
   font-weight: 300;
 }
+.bold {
+  font-weight: 600;
+}
 
-/* html {
-  scroll-behavior: smooth;
-} */
+/* svg mouse keyframes */
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(60px);
+	}
+}
 
-.titles-margin {
-  margin-bottom: 40px;
+svg #wheel {
+	animation: scroll ease 2s infinite;
+}
+
+svg {
+  width: 28px;
+}
+
+.svg-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* media queries */
-
 @media screen and (min-width: 0px) and (max-width: 992px) {
-  .image-contact {
-    height: 400px;
-  }
   svg {
     width: 20px;
   }
   p {
     font-size: 13px;
   }
-
-  .card-about {
-    padding: 20px !important;
-  }
-
-  .ml {
-    font-size: 1.9em;
-  }
-
-  .center-sm {
-    text-align: center;
-  }
-
-  .visible-card {
-    padding: 80px 40px !important;
-  }
-  .website-img {
-    height: 400px;
-  }
-
-  .service-card,
-  .quality-card {
-    padding: 60px !important;
-  }
-
-  .contact-form {
-    padding: 80px 80px;
-  }
-
-  .margin-sm {
-    margin-top: 0 !important;
-  }
-
-  #contact {
-    margin-top: 60px;
-  }
-
-  #services {
-    margin-top: 100px !important;
-  }
-
-  .nav-link {
-    width: 100% !important;
-    display: block;
-    text-align: right !important;
-  }
-
-  .navbar-nav {
-    padding: 0 !important;
-    text-align: right !important;
-  }
-  .me {
-    position: relative !important;
-  }
 }
 
-
-@media screen and (min-width: 1200px)  {
-  .visible-card,
-  .contact-form {
-    padding: 150px !important;
-  }
-}
+/* @media(max-width: 767px){}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){} */

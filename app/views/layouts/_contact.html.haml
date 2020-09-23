@@ -1,9 +1,9 @@
 #contact
   .row
-    .col-lg-6.image-contact
+    .col-lg-6.contact-buttons-container
+      .image-contact
       .layer
-      .contact-buttons.text-center.wow.flipInX
-
+      .contact-buttons.text-center.wow.fadeInLeft
         %a.btn.btn-theme-outline{href: "https://www.linkedin.com/in/am%C3%A9lie-delory-9707b111b/", target: "_blank"}
           = image_tag 'contact/in.png', class: "icon-white icon-contact", title: 'Linked In'
         %a.btn.btn-theme-outline{href: "https://soundcloud.com/key-brain-chemical", target: "_blank"}
@@ -17,41 +17,42 @@
 
     .col-lg-6.darker-bg
       .contact-form
-        %h3.title-lg.light Contact
+        .wow.fadeInLeft
+          %h3.title-lg.light Contact
         = form_for @message, remote: true, id: 'contact-form', url: messages_path do |f|
           .row
             .col-md-6
-              .form-group
+              .form-group.wow.fadeInLeft
                 .error
                 = f.text_field  :name, required: true, placeholder: "Nom", class: "form-control"
             .col-md-6
-              .form-group
+              .form-group.wow.fadeInLeft
                 = f.text_field  :firstname, required: true, placeholder: "Prénom", class: "form-control"
           .row
             .col-md-12
-              .form-group.text-white
+              .form-group.wow.fadeInLeft
                 = f.email_field :email, required: true,placeholder: "Email" ,class: "form-control"
           .row
             .col-md-12
-              .form-group
+              .form-group.wow.fadeInLeft
                 = f.text_area :body,  required: true, placeholder: 'Message', class: "form-control"
           .row
             .col-md-12
-              %button.submit.btn.btn-theme.wow.fadeInDown.initial-content{'data-wow-offset': 0}
+              %button.submit.btn.btn-theme.wow.fadeInLeft.initial-content{'data-wow-offset': 0}
                 %span Envoyer
-              %button.submit.btn.btn-theme.sent-content.hide.no_cursor
+              %button.btn.btn-theme.sent-content.hide.no_cursor
                 %span Envoyé !
-      .baniere.text-center
-        .row
-          .col-4
-            = image_tag 'contact/phone.png'
-            %br
-            %span.light 06 20 00 35 44
-          .col-4
-            = image_tag 'contact/email.png'
-            %br
-            %span.light amelie.delory@hotmail.fr
-          .col-4
-            = image_tag 'contact/location.png'
-            %br
-            %span.light Arras
+    .baniere.text-center
+      .row
+        .col-12.col-md-4.contact-item
+          = image_tag 'contact/phone.png'
+          %br
+          %span.light 06 20 00 35 44
+        .col-12.col-md-4.contact-item
+          = image_tag 'contact/email.png'
+          %br
+          %span.light amelie.delory@hotmail.fr
+        .col-12.col-md-4.contact-item
+          = image_tag 'contact/location.png'
+          %br
+          %span.light Arras

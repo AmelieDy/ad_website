@@ -1,10 +1,5 @@
-.location-date,
-.description {
-  padding: 40px;
-}
-
 .location-date{
-  background: var(--theme-light);
+  background: var(--theme-dark);
 }
 
 .experience-title {
@@ -14,7 +9,6 @@
 }
 
 .location-title {
-  font-size: 1.2;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -27,17 +21,8 @@
   display: inline-block;
   font-weight: 300;
   box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
-}
-
-.tag-light {
-  background: #FFF;
-  color: #555555;
-}
-
-.tag-dark {
   background: var(--theme-light);
   color: #FFF;
-  box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
 }
 
 .resume-card {
@@ -54,14 +39,27 @@
 }
 
 
-@media (min-width: 0px) and (max-width: 575.98px) {
+@media(max-width: 767px){
+  .location-date,
+  .description {
+    padding: 40px 20px;
+  }
 
+  .description p {
+    font-size: 0.8em;
+  }
+
+  .location-title {
+    font-size: 1em;
+  }
 }
-
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 992px) {
-  #experience p {
-    text-align: justify;
-    line-height: 1.5em;
+@media (min-width: 768px) {
+  .location-date,
+  .description {
+    padding: 40px;
+  }
+  .location-title {
+    font-size: 1em;
   }
 }

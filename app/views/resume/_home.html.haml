@@ -1,0 +1,21 @@
+#home
+  .layer
+    .svg-container
+      = render 'layouts/svg_mouse.html.haml'
+  .container
+    .row
+      .col-lg-8.col-offset-4
+        .presentation
+          .home-content
+            %h1.name
+              Amélie Delory
+            %h2.ml
+              DÉVELOPPEUSE
+              %span.caroussel
+                %span WEB
+                %span FULL STACK
+                %span RUBY ON RAILS
+          .row
+            .col-lg-12
+              %a.btn.btn-theme.wow.fadeInLeft{href: '#contact', 'data-wow-offset': 0} CONTACT
+              = link_to "TÉLÉCHARGER CV", download_pdf_path, target: '_blank', class: 'btn btn-theme wow fadeInRight'

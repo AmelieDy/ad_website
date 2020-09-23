@@ -1,26 +1,20 @@
 @import 'partials/about.css' screen;
 @import 'partials/experience.css' screen;
-@import 'partials/tools.css' screen;
-@import 'partials/skills.css' screen;
-@import 'partials/navbar-resume.css' screen;
-@import 'partials/contact.css' screen;
 @import 'partials/home-resume.css' screen;
 @import 'partials/portfolio.css' screen;
+@import 'partials/skills.css' screen;
+@import 'partials/tools.css' screen;
 
 /* set root variables */
 :root {
   --light-grey: #F8F8F8;
-  --theme-dark: #96351E;
-  --theme-light: #DBB98F;
+  --theme-dark: #9B1B3B;
+  --theme-light: #C39EA0;
   --linear-bg: linear-gradient(to bottom left,rgba(72,72,72,0.7),rgba(30,30,30,1)) ;
 }
 
 body {
   background: var(--light-grey) !important;
-}
-
-.bold {
-  font-weight: 600;
 }
 
 section {
@@ -32,4 +26,11 @@ p {
   line-height: 2em !important;
   font-weight: 300 !important;
   color: #3B3B3B;
+}
+
+.layer {
+  background: var(--linear-bg) !important;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }

@@ -4,14 +4,12 @@
 }
 
 /* contact form settings, with inputs and textarea, valid, invalid and errors */
-
 .form-control, textarea  {
   background: transparent;
   border: 0;
   border-radius: 0;
   box-shadow: none;
   color: #777;
-  padding: 20px 0px;
   margin-top: 40px;
   border: 1px solid #333;
   padding: 20px;
@@ -49,44 +47,50 @@ label.error {
   color: var(--theme-light);
   position: absolute;
   bottom: -26px;
-  font-weight: 300;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 /* image, submit, and svg settings */
 .image-contact {
-  position: relative;
+  position: absolute;
   background: image-url("layers/minimal-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.loading-svg {
-  width: 50px;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left: 0;
 }
 
 .submit {
   width: 180px;
   margin-top: 40px;
-  margin-bottom: 80px;
 }
 
 .baniere {
   background: var(--theme-light);
   width: 100%;
-  position: absolute;
   bottom: 0;
   left:0;
   padding: 30px;
 }
 
-@media (min-width: 0px) and (max-width: 575.98px) {
+.contact-buttons-container {
+  min-height: 180px;
+}
+
+@media(max-width: 767px){
   .contact-form {
-    padding: 40px 20px;
+    padding: 40px 20px !important;
+  }
+  .contact-item {
+    margin: 20px 0px;
   }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .contact-form {
     padding: 80px 60px;
   }

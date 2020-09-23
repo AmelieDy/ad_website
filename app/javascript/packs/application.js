@@ -24,38 +24,35 @@ import 'bootstrap/js/dist/scrollspy'
 
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
-var wow = new WOW({
-                boxClass:     'wow',      // default
-                animateClass: 'animated', // default
-                offset:       100,        // default
-                mobile:       true,       // default
-                live:         true        // default
-              })
+// var wow = new WOW({
+//                 boxClass:     'wow',      // default
+//                 animateClass: 'animated', // default
+//                 offset:       100,        // default
+//                 mobile:       true,       // default
+//                 live:         true        // default
+//               })
+
+var wow = new WOW();
 wow.init();
 
 $(document).ready(function() {
 
+  // validate contact form
   $.validator.messages.required = "Remplir ce champ";
   $.validator.messages.email = "Format non valide";
   $.validator.errorLabelContainer = '.error';
 
-
+  // hide sent button, onclick show it
   $('.hide').hide();
 
   $('.submit').click(function(){
     if ($("form").valid()) {
       $('.sent-content').show();
-      $('.sent-content').addClass('wow fadeInLeft');
-
       $('.initial-content').hide();
     }
   });
 
-  $("#cv").click(function() {
-    // // hope the server sets Content-Disposition: attachment!
-    window.location = 'images/pdf/cv_dev.pdf';
-  });
-
+  // navbar settings when scroll
   function scroll_nav() {
     var scroll = $(window).scrollTop();
     if(scroll < 10){
@@ -78,6 +75,7 @@ $(document).ready(function() {
     $('.navbar').addClass('navbar-light');
   });
 
+  // prevent default when click on link
   $(document).on('click', 'a[href^="#"]', function (event) {
     wow.init();
     event.preventDefault();
@@ -86,7 +84,7 @@ $(document).ready(function() {
     }, 300);
   });
 
-
+  // animate home caroussel
   $(".caroussel > span:gt(0)").hide();
 
   setInterval(function() {
@@ -96,8 +94,5 @@ $(document).ready(function() {
       .fadeIn(1000)
       .end()
       .appendTo('.caroussel');
-  },  4000);
-
-
-
+  },  2600);
 });

@@ -25,12 +25,6 @@
   width: 300px;
 }
 
-.name {
-  color: var(--theme-light);
-  margin-bottom: 100px;
-  margin-top: 0px;
-}
-
 .ml {
   font-weight: 300;
   font-size: 2.6em;
@@ -39,32 +33,6 @@
 
 .ml span {
   font-weight: 600;
-}
-
-
-/* svg mouse keyframes */
-@keyframes scroll {
-	0% {
-		transform: translateY(0);
-	}
-	30% {
-		transform: translateY(60px);
-	}
-}
-
-svg #wheel {
-	animation: scroll ease 2s infinite;
-}
-
-svg {
-  width: 28px;
-}
-
-.svg-container {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .caroussel {
@@ -80,4 +48,12 @@ svg {
   width: 100%;
   display: inline-block;
   white-space: nowrap;
+}
+
+@media(max-width: 767px){
+  .ml span {
+    display: block;
+    height: 50px;
+    left: 0;
+  }
 }
