@@ -1,14 +1,15 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.12.1"
+lock "~> 3.14.1"
 
-set :application, "ad_website.dev"
-set :repo_url, "git@example.com:me/my_repo.git"
+set :application, "ad_website"
+set :repo_url, "git@github.com:AmelieDy/ad_website.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/Documents/ad_website"
+# set :deploy_to, "/home/Documents/ad_website"
+set :deploy_to, -> { "/var/www/#{fetch(:application)}_#{fetch(:stage)}" }
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -27,7 +28,7 @@ append :linked_files, "config/database.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets"
 
 set :nginx_config_name, 'ad_website'
-set :nginx_server_name, 'ad_website.dev'
+set :nginx_server_name, 'amelie-delory.fr'
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
