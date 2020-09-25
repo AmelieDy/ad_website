@@ -1,0 +1,15 @@
+current directory: /home/amelie/Documents/ad_website/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/home/amelie/.rbenv/versions/2.7.0/bin/ruby -I /home/amelie/.rbenv/versions/2.7.0/lib/ruby/2.7.0 -r ./siteconf20200925-7660-liz83d.rb extconf.rb
+creating Makefile
+
+current directory: /home/amelie/Documents/ad_website/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/amelie/Documents/ad_website/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/amelie/Documents/ad_website/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20200925-7660-1vqurg5/skiptrace/internal

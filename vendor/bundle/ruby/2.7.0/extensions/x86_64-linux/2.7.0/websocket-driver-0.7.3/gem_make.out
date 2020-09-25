@@ -1,0 +1,15 @@
+current directory: /home/amelie/Documents/ad_website/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+/home/amelie/.rbenv/versions/2.7.0/bin/ruby -I /home/amelie/.rbenv/versions/2.7.0/lib/ruby/2.7.0 -r ./siteconf20200925-7660-137s1p0.rb extconf.rb
+creating Makefile
+
+current directory: /home/amelie/Documents/ad_website/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/amelie/Documents/ad_website/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/amelie/Documents/ad_website/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20200925-7660-mwy022
