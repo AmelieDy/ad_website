@@ -3,7 +3,7 @@
 */
 
 /* bootstrap  */
-@import "bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap";
 /* partials */
 @import 'partials/animate.css' screen;
 @import 'partials/buttons.css' screen;
