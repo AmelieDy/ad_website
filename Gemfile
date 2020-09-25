@@ -26,7 +26,7 @@ gem 'jquery-validation-rails'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 # bootstrap
-gem 'bootstrap'
+gem 'bootstrap', '~> 4.3.1'
 # haml
 gem 'haml'
 # WOW

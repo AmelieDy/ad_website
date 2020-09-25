@@ -3,7 +3,7 @@
 */
 
 /* bootstrap  */
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap";
 /* partials */
 @import 'partials/animate.css' screen;
 @import 'partials/buttons.css' screen;
@@ -44,8 +44,6 @@
 body {
   overflow-x: hidden;
   margin: 0 auto;
-  background: var(--light-grey) !important;
-  background: #FFF !important;
   font-family: 'Poppins', sans-serif !important;
   font-weight: 300;
 }
