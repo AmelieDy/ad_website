@@ -34,8 +34,8 @@ gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem "figaro"
 
 group :production do
-   gem 'pg'
- end
+  gem 'pg', '~> 0.20.0'
+end
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false

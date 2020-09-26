@@ -1,12 +1,12 @@
 /* button theme settings */
 .btn-theme {
-  background: var(--theme-light);
+  background: var(--theme-light) !important;
   color: #FFF !important;
-  border: 2px solid var(--theme-light);
+  border: 2px solid var(--theme-light) !important;
 }
 
 .btn {
-  border-radius: 0px;
+  border-radius: 0px !important;
   box-shadow: 0px 3px 20px 0px rgba(117,140,160,0.12);
   cursor: pointer;
   font-weight: 300 !important;
