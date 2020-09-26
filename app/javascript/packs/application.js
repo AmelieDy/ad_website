@@ -6,8 +6,8 @@
 //= require turbolinks
 //= require_tree .
 //= require wow
-//= require jquery.validate
-//= require jquery.validate.additional-methods
+// = require jquery.validate
+// = require jquery.validate.additional-methods
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()

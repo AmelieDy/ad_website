@@ -5,13 +5,13 @@
 /* bootstrap  */
 @import "bootstrap";
 /* partials */
-@import 'partials/animate.css' screen;
-@import 'partials/buttons.css' screen;
-@import 'partials/contact.css' screen;
-@import 'partials/navbar.css' screen;
-@import 'partials/titles.css' screen;
+@import 'partials/animate.css';
+@import 'partials/buttons.css';
+@import 'partials/contact.css';
+@import 'partials/navbar.css';
+@import 'partials/titles.css';
 /* google fonts */
-@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Baloo+2|Montserrat:100,300|Poppins:100,300,600,500|Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300|Poppins:100,300,600,500&display=swap');
 
 /* set background classes to add on html elements */
 .lighter-grey-bg {

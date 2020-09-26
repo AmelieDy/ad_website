@@ -37,7 +37,6 @@ gem "figaro"
 
 group :production do
   gem 'pg'
-  gem 'unicorn'
 end
 
 # Reduces boot times through caching; required in config/boot.rb
