@@ -1,7 +1,10 @@
 !!!
 %html
   %head
-    %title= controller_name == 'resume' ? 'Amélie Delory' : 'MATUVU'
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
+
+    %title
+      = controller_name == 'resume' ? 'Amélie Delory' : 'MATUVU'
     = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"
     = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"
 
