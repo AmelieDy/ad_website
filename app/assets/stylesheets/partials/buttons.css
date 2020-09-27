@@ -17,12 +17,12 @@
 .sent-content {
   background: var(--theme-dark);
   color: #FFF !important;
-  border: 2px solid var(--theme-dark);
+  border: 2px solid var(--theme-dark) !important;
 }
 
 
 .btn-theme-outline {
-  border: 2px solid var(--theme-light);
+  border: 2px solid var(--theme-light) !important;
   background: transparent;
   color: #FFF !important;
 }
@@ -50,7 +50,6 @@
     padding: 10px;
     font-size: 13px;
   }
-
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
