@@ -2,7 +2,7 @@ class MessageMailer < ApplicationMailer
 
   default from: 'notifications@example.com'
 
-  CONTACT_EMAIL = "amelie.delory@gmail.com"
+  CONTACT_EMAIL = ENV['DATABASE_URL']
 
   def submission(message)
     @message = message

@@ -32,6 +32,7 @@ gem 'wow-rails'
 # contact form
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem "figaro"
+gem 'dotenv-rails'
 
 group :production do
   gem 'pg', '~> 0.20.0'

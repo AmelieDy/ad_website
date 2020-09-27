@@ -15,7 +15,7 @@
 .btn-theme:hover,
 .btn-theme-outline:hover,
 .sent-content {
-  background: var(--theme-dark);
+  background: var(--theme-dark) !important;
   color: #FFF !important;
   border: 2px solid var(--theme-dark) !important;
 }
