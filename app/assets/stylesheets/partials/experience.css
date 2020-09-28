@@ -1,5 +1,5 @@
 .location-date{
-  background: var(--theme-dark);
+  background: var(--theme-light);
 }
 
 .experience-title {
@@ -9,7 +9,6 @@
 }
 
 .location-title {
-  font-weight: 300;
   text-transform: uppercase;
 }
 
