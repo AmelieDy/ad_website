@@ -12,11 +12,6 @@
   --linear-bg: linear-gradient(to bottom left,rgba(72,72,72,0.7),rgba(30,30,30,1)) ;
 }
 
-body {
-  background: var(--light-grey) !important;
-}
-
-
 p {
   font-size: 0.9em;
   line-height: 2em !important;
