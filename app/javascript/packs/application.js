@@ -24,17 +24,12 @@ import 'bootstrap/js/dist/scrollspy'
 
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
-// var wow = new WOW({
-//                 boxClass:     'wow',      // default
-//                 animateClass: 'animated', // default
-//                 offset:       100,        // default
-//                 mobile:       true,       // default
-//                 live:         true        // default
-//               })
 
+// initialize animates
 var wow = new WOW();
 wow.init();
 
+// validate contact message
 $(document).ready(function() {
   // validate contact form
   $.validator.messages.required = "Remplir ce champ";
@@ -81,6 +76,10 @@ $(document).ready(function() {
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 300);
+  });
+
+  $(document).on('click', 'a.nav-link', function() {
+    $('.navbar-collapse').collapse('hide');
   });
 
   // animate home caroussel
