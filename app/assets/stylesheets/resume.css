@@ -26,9 +26,11 @@ p {
   color: #3B3B3B;
 }
 
-/* .layer {
+.layer {
   background: var(--linear-bg) !important;
   height: 100%;
   width: 100%;
   position: absolute;
-} */
+  top: 0;
+  left: 0;
+}

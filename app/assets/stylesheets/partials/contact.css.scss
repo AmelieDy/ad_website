@@ -53,19 +53,27 @@ label.error {
 
 /* image, submit, and svg settings */
 .image-contact {
-  // position: absolute;
-  // background: image-url("layers/minimal-1.jpg");
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // height: 100%;
-  // width: 100%;
-  // top:0;
-  // left: 0;
+  position: absolute;
+  background: image-url("layers/minimal-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left: 0;
 }
 
 .submit {
   width: 180px;
   margin-top: 40px;
+}
+
+.baniere {
+  background: var(--theme-light);
+  width: 100%;
+  bottom: 0;
+  left:0;
+  padding: 30px;
 }
 
 .contact-buttons-container {
