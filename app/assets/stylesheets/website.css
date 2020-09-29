@@ -29,10 +29,12 @@ p {
 }
 
 .layer {
-  position: absolute;
-  width: 100%;
+  background: var(--linear-bg) !important;
   height: 100%;
-  background: var(--linear-bg);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media(max-width: 767px){

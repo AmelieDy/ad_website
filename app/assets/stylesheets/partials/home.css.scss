@@ -1,13 +1,20 @@
 /* home settings, image on backgroung */
 #home {
   height: 100vh;
-  background-image: image-url('layers/mountain.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   overflow: hidden;
-  color: #FFF;
 }
+
+.image-home {
+  position: absolute;
+  background: image-url("layers/mountain.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left: 0;
+}
+
 
 /* description */
 #home .container {
@@ -29,6 +36,7 @@
   font-weight: 300;
   font-size: 2.6em;
   margin-bottom: 60px;
+  color: #FFF !important;
 }
 
 .ml span {
