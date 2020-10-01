@@ -13,13 +13,18 @@
 }
 
 .btn-theme:hover,
-.btn-theme-outline:hover,
-.sent-content {
+.btn-theme-outline:hover {
   background: var(--theme-dark) !important;
   color: #FFF !important;
   border: 2px solid var(--theme-dark) !important;
 }
 
+.sent-content,
+.sent-content:hover {
+  background: #00A86B !important;
+  color: #FFF !important;
+  border: 2px solid #00A86B !important;
+}
 
 .btn-theme-outline {
   border: 2px solid var(--theme-light) !important;
