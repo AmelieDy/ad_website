@@ -5,7 +5,7 @@ class ResumeController < ApplicationController
   end
 
   def download_pdf
-    pdf_filename = File.join(Rails.root, "/app/assets/images/pdf/cv_dev.pdf")
-    send_file(pdf_filename, :filename => "cv_dev.pdf", :type => "application/pdf", disposition: 'inline')
+    pdf_filename = File.join(Rails.root, "/app/assets/images/pdf/resume.pdf")
+    send_file(pdf_filename, :filename => "resume.pdf", :type => "application/pdf", disposition: 'inline')
   end
 end
