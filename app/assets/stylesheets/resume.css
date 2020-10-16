@@ -8,8 +8,9 @@
 /* set root variables */
 :root {
   --light-grey: #F8F8F8;
-  --theme-dark: #D79922;
-  --theme-light: #eabc3f;
+  --theme-dark: #4c32f2;
+
+  --theme-light: #573dff;
   --linear-bg: linear-gradient(to bottom left,rgba(72,72,72,0.7),rgba(30,30,30,1)) ;
 }
 
