@@ -43,7 +43,9 @@
 }
 
 .contact-buttons .btn {
-  margin: 16px;
+  margin-left: 6px;
+  margin-right: 6px;
+  padding: 10px;
 }
 
 .no_cursor {
